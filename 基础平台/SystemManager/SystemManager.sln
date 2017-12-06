@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMBLL", "SMBLL\SMBLL.csproj", "{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMDAL", "SMDAL\SMDAL.csproj", "{EECC462F-4029-4364-989B-69620ACECE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMModel", "SMModel\SMModel.csproj", "{700A8B95-11A3-4329-87AF-FD06BF33673C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMUtility", "SMUtility\SMUtility.csproj", "{01244982-0F85-4839-AE77-62F28484FFA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMIBLL", "SMIBLL\SMIBLL.csproj", "{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMIDAL", "SMIDAL\SMIDAL.csproj", "{4F963E30-D260-40B3-8C2F-12C432B9FB48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMHander", "SMHander\SMHander.csproj", "{FEBA35A7-0E15-4255-A415-02ED0890E2DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMWeb", "SMWeb\SMWeb.csproj", "{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://61.50.119.70:700/tfs/%E6%A0%A1%E7%AB%8B%E6%96%B9
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SMBLL\\SMBLL.csproj
+		SccProjectName1 = SMBLL
+		SccLocalPath1 = SMBLL
+		SccProjectUniqueName2 = SMDAL\\SMDAL.csproj
+		SccProjectName2 = SMDAL
+		SccLocalPath2 = SMDAL
+		SccProjectUniqueName3 = SMHander\\SMHander.csproj
+		SccProjectName3 = SMHander
+		SccLocalPath3 = SMHander
+		SccProjectUniqueName4 = SMIBLL\\SMIBLL.csproj
+		SccProjectName4 = SMIBLL
+		SccLocalPath4 = SMIBLL
+		SccProjectUniqueName5 = SMIDAL\\SMIDAL.csproj
+		SccProjectName5 = SMIDAL
+		SccLocalPath5 = SMIDAL
+		SccProjectUniqueName6 = SMModel\\SMModel.csproj
+		SccProjectName6 = SMModel
+		SccLocalPath6 = SMModel
+		SccProjectUniqueName7 = SMUtility\\SMUtility.csproj
+		SccProjectName7 = SMUtility
+		SccLocalPath7 = SMUtility
+		SccProjectUniqueName8 = SMWeb\\SMWeb.csproj
+		SccProjectName8 = SMWeb
+		SccLocalPath8 = SMWeb
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBA35A7-0E15-4255-A415-02ED0890E2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBA35A7-0E15-4255-A415-02ED0890E2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBA35A7-0E15-4255-A415-02ED0890E2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBA35A7-0E15-4255-A415-02ED0890E2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\SMSUtility.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\SMSUtility.pdb
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\Aspose.Pdf.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\Aspose.Words.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\ChnCharInfo.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\log4net.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\Newtonsoft.Json.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\NPOI.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\NPOI.OpenXml4Net.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\bin\Debug\System.Data.SQLite.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\obj\Debug\SMSUtility.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\obj\Debug\SMSUtility.pdb
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSUtility\obj\Debug\SMSUtility.csprojResolveAssemblyReference.cache

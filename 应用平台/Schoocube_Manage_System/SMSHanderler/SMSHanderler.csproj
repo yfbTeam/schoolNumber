@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CEC5D9D2-F444-4672-8D61-2E644E793749}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMSHanderler</RootNamespace>
+    <AssemblyName>SMSHanderler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9a9ae096f0524ad9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMSUtility\dll\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMSUtility\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMSUtility\bin\Debug\SMSUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseHandlers\ToExcelHandler.ashx" />
+    <Content Include="ResourceManage\MyResourceHander.ashx" />
+    <Content Include="ResourceManage\PublicResoure.ashx" />
+    <Content Include="CourseManage\CourceManage.ashx" />
+    <Content Include="CourseManage\CourseSet.ashx" />
+    <Content Include="CourseManage\CouseResource.ashx" />
+    <Content Include="CourseManage\TopicHandel.ashx" />
+    <Content Include="OnlineLearning\NoticeHandler.ashx" />
+    <Content Include="OnlineLearning\TaskHandler.ashx" />
+    <Content Include="OnlineLearning\CommonHandler.ashx" />
+    <Content Include="OnlineLearning\WorkHandler.ashx" />
+    <Content Include="PortalManage\AdvertisingHandler.ashx" />
+    <Content Include="PortalManage\MessageHandler.ashx" />
+    <Content Include="PortalManage\NoticesHandler.ashx" />
+    <Content Include="PortalManage\SchoolStyle.ashx" />
+    <Content Include="BaseHandlers\BookCatagory.ashx" />
+    <Content Include="Exam\ExamPaperHandler.ashx" />
+    <Content Include="PortalManage\AdminManager.ashx" />
+    <Content Include="Class\ClassActivityHandler.ashx" />
+    <Content Include="CourseManage\PersonSpaceStu.ashx" />
+    <Content Include="PortalManage\MonitorRecordHandler.ashx" />
+    <Content Include="Certificate\Certificate.ashx" />
+    <Content Include="OnlineLearning\MyLessonsHandler.ashx" />
+    <Content Include="OnlineLearning\TopicHandler.ashx" />
+    <Content Include="Exam\ExamHandler.ashx" />
+    <Content Include="Mobile\MobileHandler.ashx" />
+    <Content Include="AccountManagement\PrepaidCardCenterHander.ashx" />
+    <Content Include="AccountManagement\CardPriceHistoryHander.ashx" />
+    <Content Include="AccountManagement\UserCardInfoHander.ashx" />
+    <Content Include="Library\Library.ashx" />
+    <Content Include="App_Data\qqwry.dat" />
+    <Content Include="PortalManage\JobHandler.ashx" />
+    <Content Include="AccountManagement\AccountInfoHandler.ashx" />
+    <None Include="Properties\PublishProfiles\hzhander.pubxml" />
+    <Content Include="ResourceReservations\ResourceReservationInfoHandler.ashx" />
+    <Content Include="ResourceReservations\ResourceReservationClaHandler.ashx" />
+    <Content Include="ResourceReservations\TimeIntervalHandler.ashx" />
+    <Content Include="ResourceReservations\ResourceTimeMappingIdHandler.ashx" />
+    <Content Include="ResourceReservations\TimeManagementHandler.ashx" />
+    <Content Include="ResourceReservations\ResourceReservationHandler.ashx" />
+    <Content Include="ResourceReservations\ViewData.ashx" />
+    <Content Include="ResourceReservations\AssetManagementHandler.ashx" />
+    <Content Include="Train\StudentTrainHandler.ashx" />
+    <Content Include="Recommended\Recommended.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SMSHander.csproj" />
+    <Content Include="SMSHander.csproj.user" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountManagement\AccountInfoHandler.ashx.cs">
+      <DependentUpon>AccountInfoHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagement\CardPriceHistoryHander.ashx.cs">
+      <DependentUpon>CardPriceHistoryHander.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagement\PrepaidCardCenterHander.ashx.cs">
+      <DependentUpon>PrepaidCardCenterHander.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="AccountManagement\UserCardInfoHander.ashx.cs">
+      <DependentUpon>UserCardInfoHander.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseHandlers\BookCatagory.ashx.cs">
+      <DependentUpon>BookCatagory.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Certificate\Certificate.ashx.cs">
+      <DependentUpon>Certificate.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ClassActivityHandler.ashx.cs">
+      <DependentUpon>ClassActivityHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseManage\CourceManage.ashx.cs">
+      <DependentUpon>CourceManage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseManage\CourseSet.ashx.cs">
+      <DependentUpon>CourseSet.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseManage\CouseResource.ashx.cs">
+      <DependentUpon>CouseResource.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseManage\PersonSpaceStu.ashx.cs">
+      <DependentUpon>PersonSpaceStu.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="CourseManage\TopicHandel.ashx.cs">
+      <DependentUpon>TopicHandel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\ExamHandler.ashx.cs">
+      <DependentUpon>ExamHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam\ExamPaperHandler.ashx.cs">
+      <DependentUpon>ExamPaperHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Library\Library.ashx.cs">
+      <DependentUpon>Library.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\MobileHandler.ashx.cs">
+      <DependentUpon>MobileHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineLearning\CommonHandler.ashx.cs">
+      <DependentUpon>CommonHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineLearning\MyLessonsHandler.ashx.cs">
+      <DependentUpon>MyLessonsHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineLearning\NoticeHandler.ashx.cs">
+      <DependentUpon>NoticeHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineLearning\TaskHandler.ashx.cs">
+      <DependentUpon>TaskHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineLearning\TopicHandler.ashx.cs">
+      <DependentUpon>TopicHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineLearning\WorkHandler.ashx.cs">
+      <DependentUpon>WorkHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalManage\AdminManager.ashx.cs">
+      <DependentUpon>AdminManager.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalManage\AdvertisingHandler.ashx.cs">
+      <DependentUpon>AdvertisingHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalManage\JobHandler.ashx.cs">
+      <DependentUpon>JobHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalManage\MessageHandler.ashx.cs">
+      <DependentUpon>MessageHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalManage\MonitorRecordHandler.ashx.cs">
+      <DependentUpon>MonitorRecordHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalManage\NoticesHandler.ashx.cs">
+      <DependentUpon>NoticesHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PortalManage\SchoolStyle.ashx.cs">
+      <DependentUpon>SchoolStyle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Recommended\Recommended.ashx.cs">
+      <DependentUpon>Recommended.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceManage\PublicResoure.ashx.cs">
+      <DependentUpon>PublicResoure.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceManage\MyResourceHander.ashx.cs">
+      <DependentUpon>MyResourceHander.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceReservations\AssetManagementHandler.ashx.cs">
+      <DependentUpon>AssetManagementHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceReservations\ResourceReservationClaHandler.ashx.cs">
+      <DependentUpon>ResourceReservationClaHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceReservations\ResourceReservationHandler.ashx.cs">
+      <DependentUpon>ResourceReservationHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceReservations\ResourceReservationInfoHandler.ashx.cs">
+      <DependentUpon>ResourceReservationInfoHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceReservations\ResourceTimeMappingIdHandler.ashx.cs">
+      <DependentUpon>ResourceTimeMappingIdHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceReservations\TimeIntervalHandler.ashx.cs">
+      <DependentUpon>TimeIntervalHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceReservations\TimeManagementHandler.ashx.cs">
+      <DependentUpon>TimeManagementHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceReservations\ViewData.ashx.cs">
+      <DependentUpon>ViewData.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Train\StudentTrainHandler.ashx.cs">
+      <DependentUpon>StudentTrainHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dll\" />
+    <Folder Include="LibraryDoc\" />
+    <Folder Include="Train\ResourceReservationImage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMSBLL\SMSBLL.csproj">
+      <Project>{9ccfa1bc-45c2-4c74-94fa-cca050fb2b85}</Project>
+      <Name>SMSBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSIBLL\SMSIBLL.csproj">
+      <Project>{03f34f9d-df87-4644-aa94-d1dd6c1b91c4}</Project>
+      <Name>SMSIBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSModel\SMSModel.csproj">
+      <Project>{700a8b95-11a3-4329-87af-fd06bf33673c}</Project>
+      <Name>SMSModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>44275</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44275/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

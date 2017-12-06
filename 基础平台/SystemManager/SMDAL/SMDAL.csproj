@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EECC462F-4029-4364-989B-69620ACECE0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMDAL</RootNamespace>
+    <AssemblyName>SMDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseDal.cs" />
+    <Compile Include="DalTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DalTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartialClass\Plat_InterfaceDal.cs" />
+    <Compile Include="PartialClass\Plat_RoleOfUserDal.cs" />
+    <Compile Include="PartialClass\Plat_SysIndentifyDal.cs" />
+    <Compile Include="PartialClass\Plat_SysOfInter_RelDal.cs" />
+    <Compile Include="PartialClass\Plat_StudentDal.cs" />
+    <Compile Include="PartialClass\Plat_ClassInfoDal.cs" />
+    <Compile Include="PartialClass\Plat_UserOfSystemDal.cs" />
+    <Compile Include="PartialClass\Plat_TeacherDal.cs" />
+    <Compile Include="PartialClass\Plat_LogInfoDal.cs" />
+    <Compile Include="PartialClass\Plat_MenuInfoDal.cs" />
+    <Compile Include="PartialClass\Plat_RoleDal.cs" />
+    <Compile Include="PartialClass\Plat_SystemInfoDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="代码分析.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DalTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DalTemplate.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMIDAL\SMIDAL.csproj">
+      <Project>{4f963e30-d260-40b3-8c2f-12c432b9fb48}</Project>
+      <Name>SMIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMModel\SMModel.csproj">
+      <Project>{700a8b95-11a3-4329-87af-fd06bf33673c}</Project>
+      <Name>SMModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMUtility\SMUtility.csproj">
+      <Project>{01244982-0f85-4839-ae77-62f28484ffa1}</Project>
+      <Name>SMUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

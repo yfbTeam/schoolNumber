@@ -1,0 +1,5 @@
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSModel\bin\Debug\SMSModel.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSModel\bin\Debug\SMSModel.pdb
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSModel\obj\Debug\SMSModel.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSModel\obj\Debug\SMSModel.pdb
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSModel\obj\Debug\SMSModel.csprojResolveAssemblyReference.cache

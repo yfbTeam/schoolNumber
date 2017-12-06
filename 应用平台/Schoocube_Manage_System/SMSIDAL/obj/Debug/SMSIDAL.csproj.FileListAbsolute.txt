@@ -1,0 +1,16 @@
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\SMSIDAL.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\SMSIDAL.pdb
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\SMSModel.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\SMSUtility.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\Newtonsoft.Json.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\log4net.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\NPOI.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\Aspose.Pdf.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\ChnCharInfo.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\Aspose.Words.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\SMSModel.pdb
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\bin\Debug\SMSUtility.pdb
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\obj\Debug\SMSIDAL.csprojResolveAssemblyReference.cache
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\obj\Debug\SMSIDAL.dll
+D:\projects\数字校园\应用平台\Schoocube_Manage_System\SMSIDAL\obj\Debug\SMSIDAL.pdb

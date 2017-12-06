@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMBLL</RootNamespace>
+    <AssemblyName>SMBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPOI, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMWeb\dll\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\SMWeb\dll\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\SMWeb\dll\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\SMWeb\dll\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utility">
+      <HintPath>..\Utility\bin\Debug\Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="BLLCommon.cs" />
+    <Compile Include="BLLTemplate.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BLLTemplate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartialClass\Plat_RoleOfUserService.cs" />
+    <Compile Include="PartialClass\Plat_ClassInfoService.cs" />
+    <Compile Include="PartialClass\Plat_StudentService.cs" />
+    <Compile Include="PartialClass\Plat_StudySectionService.cs" />
+    <Compile Include="PartialClass\Plat_SysOfInter_RelService.cs" />
+    <Compile Include="PartialClass\Plat_UserOfSystemService.cs" />
+    <Compile Include="PartialClass\Plat_TextbookService.cs" />
+    <Compile Include="PartialClass\Plat_TeacherService.cs" />
+    <Compile Include="PartialClass\Plat_LogInfoService.cs" />
+    <Compile Include="PartialClass\Plat_MenuInfoService.cs" />
+    <Compile Include="PartialClass\Plat_RoleService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartialClass\Plat_SystemInfoService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BLLTemplate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BLLTemplate.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMDAL\SMDAL.csproj">
+      <Project>{eecc462f-4029-4364-989b-69620acece0c}</Project>
+      <Name>SMDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMIBLL\SMIBLL.csproj">
+      <Project>{03f34f9d-df87-4644-aa94-d1dd6c1b91c4}</Project>
+      <Name>SMIBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMIDAL\SMIDAL.csproj">
+      <Project>{4f963e30-d260-40b3-8c2f-12c432b9fb48}</Project>
+      <Name>SMIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMModel\SMModel.csproj">
+      <Project>{700a8b95-11a3-4329-87af-fd06bf33673c}</Project>
+      <Name>SMModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMUtility\SMUtility.csproj">
+      <Project>{01244982-0f85-4839-ae77-62f28484ffa1}</Project>
+      <Name>SMUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

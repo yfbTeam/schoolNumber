@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+.crumb_nav{ height:54px; line-height:54px; background:#374760; font-size:14px; font-weight:normal; color:#fff; padding-left:25px; overflow:hidden;}
+/*.certificate_box{ padding:20px 25px; overflow:hidden;}*/
+.certificate_box{ padding-top:20px; overflow:hidden;}
+.tips{ color:#ff0000; margin-left:30px;}
+.certificate_tit{ margin-top:15px; height:25px; padding-bottom:5px; border-bottom:1px solid #666;}
+.certificate_tit h4{ display:inline-block; padding:0 15px; line-height:25px; padding-bottom:3px; border-bottom:3px solid #374760; font-size:16px; color:#2a3950;}
+
+.certificate_list{ overflow:hidden;}
+.certificate_list li{ float:left; margin:25px 0 0 80px; overflow:hidden;}
+.certificate_list li img{ display:block;}
+/*.img_box{ width:186px; height:262px; border:7px solid #bbc2c9; position:relative;}*/
+.img_box{ width:289px; height:185px; border:7px solid #bbc2c9; position:relative;}
+.simg_box{ width:182px; height:255px; border:7px solid #bbc2c9; position:relative;}
+/*.mask_wrap{ display:table; position:absolute; top:-283px; left:-7px; width:200px; height:276px; background:#000; opacity:0.4; filter:alpha(opacity=40);}*/
+.mask_wrap{ display:table; position:absolute; top:-283px; left:-7px; width:305px; height:200px; background:#000; opacity:0.4; filter:alpha(opacity=40);}
+.smask_wrap{ display:table; position:absolute; top:-283px; left:-7px; width:197px; height:200px; background:#000; opacity:0.4; filter:alpha(opacity=40);}
+/*.mask_box{ display:table-cell; height:276px; vertical-align:middle; color:#fff;font-size:18px; font-weight:bold;}*/
+.mask_box{ display:table-cell; height:200px; vertical-align:middle; color:#fff;font-size:18px; font-weight:bold;}
+.mask_box span{ display:block; width:70px; height:70px; border:5px solid #fff; border-radius:40px; text-align:center; margin:0 auto; line-height:70px; }
+.mask_box p{ margin-top:10px; text-align:center;}
+
+.smask_box{ display:table-cell; height:275px; vertical-align:middle; color:#fff;font-size:18px; font-weight:bold;}
+.smask_box span{ display:block; width:70px; height:70px; border:5px solid #fff; border-radius:40px; text-align:center; margin:0 auto; line-height:70px; }
+.smask_box p{ margin-top:10px; text-align:center;}
+
+.certificate_info{ padding:10px 15px 0; overflow:hidden;}
+.certificate_info span{ float:left; max-width:150px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:16px; color:#333;}
+.certificate_info p{ display:none; float:right;}
+.certificate_info p a{ float:right; width:16px; height:16px; margin:3px 0 0 7px; background:url(../Images/icon_certificate.png) no-repeat;}
+.certificate_info p a.icon_p{ background-position:0 -16px;}
+.certificate_info p a.icon_d{ background-position:0 0;}
+
+.no_content{ margin-top:120px; overflow:hidden; text-align:center;}
+.no_content p{ font-size:28px; color:#999; font-weight:bold; margin-top:20px; line-height:40px;}
+
+.certificates_wrap{ padding:32px; width:688px; margin:20px auto; background:#bbc2c9; overflow:hidden; height:985px;}
+.certificates_wrap img{ display:block;}
+
+.stg_tit { padding-bottom: 8px; margin-top: 10px; height: 22px; line-height: 22px; border-bottom: 1px solid #374760; font-weight: bold; }
+.stg_tit span { margin-right: 30px; float: left; height: 21px; line-height: 33px; padding-bottom: 7px; font-size: 14px; color: #333; }
+.stg_tit span a { color: #666666; }
+.stg_tit span.action { border-bottom: 3px solid #366061; }
+.stg_tit span.action a { font-weight: bold; color: #374760; }
+
+.que_btn {background: #E2E2E2 none repeat scroll 0 0; border-radius: 5px; color: #fff; float: right; height: 20px; line-height: 20px; text-align: center; text-decoration: none; width: 60px; }
+
+.info_detail_list { float: left; height: 32px; line-height: 32px; margin-top: 15px; width: 363px; }
+.slabel { color: #333; float: left; font-size: 13px; margin-right: 10px; text-align: right; width: 65px; }
+.wod_btn { padding: 5px 10px 5px 10px; height: 20px; width: 60px; background: #1E5975; line-height: 20px; color: #fff; text-align: center; border: 1px solid #ccc; }
+.wod_btn:hover { background: #233f45; }
+.wrt_btn { padding: 5px 10px 5px 10px; height: 20px; width: 60px; background: #999999; line-height: 20px; color: #fff; text-align: center; border: 1px solid #ccc; }
+.leftt { margin-left:30px;}
+
+
+
+
+
+
+
+
+
+
+
+

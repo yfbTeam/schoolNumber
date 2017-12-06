@@ -1,0 +1,35 @@
+﻿/*头部*/
+.header_wrap{width:100%;background: #007cdb;}
+.header{width:80%;min-width: 980px;margin: 0 auto;}
+.header .logo{display:inline-block;margin: 5px 5px 5px 0px;}
+.account{text-align: center;font-size: 14px;margin-top:10px;position:relative;}
+.account.active{background: #fff;}
+.account i{font-size: 16px;float:right;margin-right: 10px;transform: rotate(90deg);-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);}
+.account_area{display:none;position:absolute;top:100%;right:0;z-index: 999;}
+.account_area a{display:block;width:150px;background:#fff;line-height: 30px;text-indent: 10px;font-size: 14px;}
+.account_area a:hover{background: #E5F3FB;}
+/*main*/
+#main{width:90%;min-width:980px;margin: 0 auto;position:relative;}
+/*左边列表*/
+#list_bar{
+  top: 0;
+  left: 0;
+  width: 230px;
+  min-height: 600px;
+  background: #f8f8f8;
+  position: absolute;
+ }
+.items{border-bottom: 1px solid #ddd;}
+.items a,.item_title{display: block;height:35px;border-bottom: 1px solid #e5e5e5;line-height: 35px;padding: 0px 20px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;cursor: pointer;}
+.items a:hover{background: #fff;border-left:2px solid  #007cdb;margin-left: -1px;}
+.items .item_title .icon{width:25px;height:25px;display: block;float:left;margin: 5px 5px 5px 0px;font-size: 21px;color:#333;text-align: center;line-height: 25px;}
+.items .item_title .icon_right{font-size: 16px;float:right;margin-right: -10px;}
+.items .item_title .icon_right.active{transform: rotate(90deg);-webkit-transform: rotate(90deg);
+-ms-transform: rotate(90deg);-moz-transform: rotate(90deg);}
+.items .list_item{display: none;}
+.items .list_item li a{ text-indent:1.5em;}
+/*右边内容*/
+#article_content{
+  margin-left: 230px; 
+ }
+#article_content .article_inner{width:100%;margin-left: 10px;border: 1px solid #ccc;padding: 10px;}

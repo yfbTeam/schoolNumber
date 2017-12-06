@@ -1,0 +1,5 @@
+D:\projects\数字校园\基础平台\SystemManager\SMModel\bin\Debug\SMModel.dll
+D:\projects\数字校园\基础平台\SystemManager\SMModel\bin\Debug\SMModel.pdb
+D:\projects\数字校园\基础平台\SystemManager\SMModel\obj\Debug\SMModel.dll
+D:\projects\数字校园\基础平台\SystemManager\SMModel\obj\Debug\SMModel.pdb
+D:\projects\数字校园\基础平台\SystemManager\SMModel\obj\Debug\SMModel.csprojResolveAssemblyReference.cache

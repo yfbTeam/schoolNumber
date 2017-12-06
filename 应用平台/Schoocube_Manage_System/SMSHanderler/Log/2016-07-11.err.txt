@@ -1,0 +1,64 @@
+﻿运行时错误出现时间：2016/7/11 11:37:11
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:13
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:16
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:18
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:20
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:22
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:23
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:25
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:28
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:30
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:32
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 11:37:35
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 14:20:47
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 14:20:51
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 14:20:55
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+
+运行时错误出现时间：2016/7/11 14:20:58
+错误原因：Error reading JObject from JsonReader. Current JsonReader item is not an object: Integer. Path '', line 1, position 1.
+
+

@@ -1,0 +1,12 @@
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\SMIDAL.dll
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\SMIDAL.pdb
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\SMModel.dll
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\SMUtility.dll
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\NPOI.dll
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\ChnCharInfo.dll
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\SMModel.pdb
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\bin\Debug\SMUtility.pdb
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\obj\Debug\SMIDAL.csprojResolveAssemblyReference.cache
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\obj\Debug\SMIDAL.dll
+D:\projects\数字校园\基础平台\SystemManager\SMIDAL\obj\Debug\SMIDAL.pdb

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="/PortalCss/layout.css" rel="stylesheet" />
+    <link href="/PortalCss/reset.css" rel="stylesheet" />
+    <script src="/Scripts/jquery-1.11.2.min.js"></script>
+    <script src="/PortalJs/layout.js"></script>
+</head>
+<body>
+    <div class="leftnav fl">
+        <h1>
+            <span class="school_zn">学校简介</span>
+            <span class="school_zy">School profile</span>
+        </h1>
+        <div class="leftnav_detail" style="min-height:480px;">
+            <a href="#" class="on" data-url="/Portal/Advertising/AdvertisingView.aspx?Type=3">学校介绍</a>
+            <a href="#" data-url="/Portal/Advertising/AdvertisingView.aspx?Type=14">学校特色</a>
+            <a href="#" data-url="/Portal/Advertising/AdvertisingItemList.aspx?Type=0">校园风貌</a>
+            <a href="#" data-url="/Portal/Advertising/AdvertisingView.aspx?Type=15">荣誉资质</a>
+            <a href="#" data-url="/Portal/Advertising/AdvertisingItemList.aspx?Type=1">师资力量</a>
+            <a href="#" data-url="/Portal/Advertising/AdvertisingView.aspx?Type=16">明星学员</a>
+            <a href="#" data-url="/Portal/Advertising/AdvertisingView.aspx?Type=17">联系学校</a>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".leftnav_detail a").on('click', function () {
+                var obj = $(this).attr("data-url");
+                window.parent.window.location.href = obj;
+            })
+        })
+    </script>
+</body>
+</html>

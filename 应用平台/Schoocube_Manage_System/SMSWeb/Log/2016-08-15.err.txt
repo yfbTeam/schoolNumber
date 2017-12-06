@@ -1,0 +1,36 @@
+﻿运行时错误出现时间：2016/8/15 8:44:13
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 8:47:49
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 9:20:54
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 10:00:40
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 10:47:12
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 10:47:13
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 14:07:32
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 15:57:13
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/15 17:06:28
+错误原因：Thread was being aborted.
+
+

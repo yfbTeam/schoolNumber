@@ -1,0 +1,155 @@
+.time_wrap .menu{width:220px;}
+.time_wrap .menu .detail_items_title{padding:0px 10px;
+    height: 36px;
+    line-height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 16px;
+    background: #1775bd;}
+    .time_wrap .menu .detail_items_title div{padding:0px 5px;height:20px;border:1px solid #fff;line-height: 20px;color:#fff;border-radius:2px ;text-align: center;font-size:14px;margin-top:7px;cursor: pointer;}
+ .time_wrap .menu  .item_sides{min-height: 200px;}
+.manage{float:right;width:50px;height:24px;text-align: center;line-height: 24px;margin: 9px 15px 9px 0px;border: 1px solid #fff;border-radius:2px;font-size:14px;color:#fff;}
+.time_base .time{text-align: center;}
+.time_base .time li{margin-top: 10px;}
+.time_base .time li .Wdate{width:200px;height:26px;border:1px solid #89b8dc;border-radius:2px ;text-indent:5px;margin-right: 10px;}
+.time_base .time li .btn_add,.time_base .time li .btn_delete{width:30px;height:30px;border: none;font-size:16px;color:#fff;margin-right: 10px;background: #0488C9;cursor:pointer;}
+.time_base .sure{width:80px;height:30px;background: #0488C9;border-radius:2px ;font-size:16px;color:#fff;margin-top:30px;cursor:pointer;}
+.time_wrap .stytem_select_right{width:100%;}
+/**/
+table{width:100%;}
+.thead th{line-height:30px;height:30px;background: #D0E3F1;color:#2187C9;text-align: center;font-size: 16px;border:1px solid #abd0f5;}
+.thead input[type=checkbox],.tbody input[type=checkbox]{width:15px;height:15px;background: #fff;vertical-align: middle;border: 1px solid #89b8dc;}
+.tbody tr td{line-height:30px;height:30px;color:#fff;text-align: center;font-size: 15px;border: 1px solid #abd0f5;color: #666;
+line-height: 28px}
+.tbody tr:nth-child(odd){background: #fff;}
+.tbody tr:nth-child(even){background: #ebf5ff;}
+.enable_wrap{border-radius: 12px;background: #dcdcdc;font-size: 14px;display: inline-block;height:26px;color:#fff;vertical-align: middle;}
+.enable_wrap a{width:40px;color:#fff;font-size:14px;display: block;float:left;border-radius: 12px;height:26px;}
+.enable_wrap .enable{background: #00B400;}
+.enable_wrap .disable{background: #D84926;}
+.icona{width:16px;height:16px;display: inline-block;font-size:16px;line-height:16px;cursor:pointer;margin:0px 2px;vertical-align:middle;color: #5493d7}
+.title_mate{padding:10px 20px;background: #d0e3f1;line-height: 25px;font-size;14px;color:#1472b9;}
+
+
+
+/*booking_detail*/
+.booking_wrap{padding:20px;background: #fff;}
+.booking_nav{border-bottom:1px solid #0A74C0 ;height:25px;}
+.booking_nav a{width:105px;height:25px;display: block;float:left;line-height: 25px;text-align: center;color:#666;font-size:14px;}
+.booking_nav a.on{background: #0A74C0;color:#fff;}
+.booking_duan{border:1px solid #87B7DE;border-bottom:2px solid #87B7DE;padding:10px;}
+.booking_duan label{line-height: 28px;color:#666666;font-size:12px;margin:5px 0px;padding:0px 10px;}
+.booking_duan input{width:150px;height:26px;border:1px solid #89b8dc;text-indent: 10px;border-radius: 2px;margin: 5px 0px;}
+.booking_duan span{line-height: 28px;color:#89b8dc;margin:5px 0px;padding:0px 10px;}
+.booking_mes ul {margin-left: -20px;margin-top: -10px;}
+.booking_mes ul li{width:525px;height:151px;overflow:hidden;float:left;border:2px solid #89b8dc;margin-top:20px;margin-left:20px;padding:20px;}
+.booking_img{width:272px;height:160px;overflow:hidden;}
+.booking_mess{width:233px;}
+.booking_mess p{font-size:14px;color:#666;line-height: 25px;}
+.metting_title{line-height:29px;border-bottom:1px solid #89b8dc;font-size:14px;color:#666;}
+/**/
+.booking_des{padding:10px 0px;border-bottom: 2px solid #87B7DE;position:relative;}
+.mess_booking{padding:10px;border: 1px solid #87B7DE;}
+.mess_booking .img_booking{width:125px;overflow:hidden;}
+.mess_booking .des_booking{margin-left:10px;}
+.mess_booking .des_booking p{font-size:14px;color:#666;line-height: 20px;}
+.mess_booking .des_booking .metting_title{line-height:19px;border-bottom:1px solid #89b8dc;font-size:14px;color:#666;}
+/**/
+.cHead .ftitle{height:40px;padding:0px 15px;line-height:40px;background:#1776bd;border-radius:3px 3px 0px 0px;color:#fff;font-size:14px;}
+.calbar{padding:5px 20px;border:1px solid #68aeda;}
+.calbar .fbutton{padding:5px 8px;border:1px solid #68aeda;border-radius:2px;font-size:16px;color:#1776bd;float:left;margin-right: 5px;cursor: pointer;font-size:16px;}
+.calbar .fbutton span{line-height: 10px;text-align: center;}
+.wk-dayname{text-align: center;height:25px;line-height: 25px;}
+.wk-top{background: #d2e4f2;border-left:1px solid #68aeda;}
+.wk-top th{border-right:1px solid #68aeda;}
+.calbar .fbutton:hover{background: #d2e4f2;}
+/**/
+.MenuDiv {
+    padding: 15px;
+    font-size: 14px;
+    background: #fff;
+}
+.tbEdit {
+    width: 100%;
+}
+.tbEdit tr td.mi {
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 10px;
+}
+.tbEdit tr td {
+    line-height: 28px;
+    padding: 10px;
+}
+.tbEdit tr td.ku input[type="text"], [type="number"] {
+    width: 230px;
+}
+.tbEdit tr td.ku input {
+    border-radius: 3px;
+    line-height: 28px;
+    height: 28px;
+    padding: 0px 10px;
+}
+select, input, textarea, button {
+    font: 99% sans-serif;
+}
+input, select {
+    vertical-align: middle;
+}
+textarea, input, button, select {
+    outline: 0;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    line-height: 28px;
+    height: 28px;
+}
+input, select {
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 28px;
+}
+/*日程安排控件*/
+#calendar{width:100%;font-size: 12px;}
+.fc-border-separate thead tr{width:100%;height:25px;}
+/*.fc-border-separate thead  tr th.fc-day-header,.fc-border-separate thead  tr th.fc-widget-header{vertical-align: middle;border-bottom: 3px solid #FFD04C;}*/
+.index_footer{height:width:100%;height:15px;}
+.time_duan{width:164px;border-left: 1px solid #4898ce;}
+.time_duan h1{height:38px;line-height: 38px;font-size:14px;color:#1776bd;text-align:center;background: #d2e4f2;border-right:0;cursor:pointer;border-bottom: 1px solid #4898ce;border-right: 1px solid #4898ce;}
+.time_duan ul{height:556px;background: #e7f1f8;border-right: 1px solid #4898ce;}
+.time_duan ul li{text-align:center;line-height:139px;box-sizing:border-box;height:139px;border-bottom: 1px solid #4898ce;color:#1776bd;font-size:14px;}
+.cal_wrap{width:993px;}
+.calendar{width:993px;}
+.calendar table{cursor: pointer;}
+.calendar table thead th{height:38px;line-height: 38px;font-size:14px;color:#1776bd;text-align:center;background: #d2e4f2;border-right: 1px solid #4898ce;border-bottom: 1px solid #4898ce;}
+.calendar table thead th:hover{background: #bae2c1;}
+.calendar table tbody tr td{height:555px;border-right:1px solid #4898ce;position:relative;}
+.calendar table tbody tr td div{height:138px;border-bottom: 1px solid #4898ce;}
+
+/*自定义calendar*/
+.calendar_table table tr.toptr{border-left:1px solid #4898ce;}
+.calendar_table table tr.toptr th{height: 38px;
+    font-weight:normal;
+    line-height: 38px;
+    font-size: 14px;
+    color: #1776bd;
+    text-align: center;
+    background: #d2e4f2;
+    border-right: 1px solid #4898ce;
+    border-bottom: 1px solid #4898ce;width:145px;}
+.calendar_table table tr td{    border: 1px solid #ACCFF5;
+     height: 150px;
+    text-align: center;width:145px; }
+.calendar_table table tr th{border: 1px solid #ACCFF5;
+    width:145px;
+    font-size:14px;
+    font-weight:normal;
+    height: 150px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #d2e4f2;
+    color: #1776bd;}
+.selected {
+	background-color: #c2dfa5;
+}

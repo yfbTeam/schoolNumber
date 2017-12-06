@@ -1,0 +1,8 @@
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\bin\Debug\SMUtility.dll
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\bin\Debug\SMUtility.pdb
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\bin\Debug\ChnCharInfo.dll
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\bin\Debug\NPOI.dll
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\obj\Debug\SMUtility.csprojResolveAssemblyReference.cache
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\obj\Debug\SMUtility.dll
+D:\projects\数字校园\基础平台\SystemManager\SMUtility\obj\Debug\SMUtility.pdb

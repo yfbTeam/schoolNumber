@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSBLL", "SMSBLL\SMSBLL.csproj", "{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSDAL", "SMSDAL\SMSDAL.csproj", "{EECC462F-4029-4364-989B-69620ACECE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSModel", "SMSModel\SMSModel.csproj", "{700A8B95-11A3-4329-87AF-FD06BF33673C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSUtility", "SMSUtility\SMSUtility.csproj", "{01244982-0F85-4839-AE77-62F28484FFA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSIBLL", "SMSIBLL\SMSIBLL.csproj", "{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSIDAL", "SMSIDAL\SMSIDAL.csproj", "{4F963E30-D260-40B3-8C2F-12C432B9FB48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSWeb", "SMSWeb\SMSWeb.csproj", "{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMSHanderler", "SMSHanderler\SMSHanderler.csproj", "{CEC5D9D2-F444-4672-8D61-2E644E793749}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://61.50.119.70:700/tfs/%E6%A0%A1%E7%AB%8B%E6%96%B9
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SMSBLL\\SMSBLL.csproj
+		SccProjectName1 = SMSBLL
+		SccLocalPath1 = SMSBLL
+		SccProjectUniqueName2 = SMSDAL\\SMSDAL.csproj
+		SccProjectName2 = SMSDAL
+		SccLocalPath2 = SMSDAL
+		SccProjectUniqueName3 = SMSIBLL\\SMSIBLL.csproj
+		SccProjectName3 = SMSIBLL
+		SccLocalPath3 = SMSIBLL
+		SccProjectUniqueName4 = SMSIDAL\\SMSIDAL.csproj
+		SccProjectName4 = SMSIDAL
+		SccLocalPath4 = SMSIDAL
+		SccProjectUniqueName5 = SMSModel\\SMSModel.csproj
+		SccProjectName5 = SMSModel
+		SccLocalPath5 = SMSModel
+		SccProjectUniqueName6 = SMSUtility\\SMSUtility.csproj
+		SccProjectName6 = SMSUtility
+		SccLocalPath6 = SMSUtility
+		SccProjectUniqueName7 = SMSWeb\\SMSWeb.csproj
+		SccProjectName7 = SMSWeb
+		SccLocalPath7 = SMSWeb
+		SccProjectUniqueName8 = SMSHanderler\\SMSHanderler.csproj
+		SccProjectName8 = SMSHanderler
+		SccLocalPath8 = SMSHanderler
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECC462F-4029-4364-989B-69620ACECE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700A8B95-11A3-4329-87AF-FD06BF33673C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01244982-0F85-4839-AE77-62F28484FFA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F34F9D-DF87-4644-AA94-D1DD6C1B91C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F963E30-D260-40B3-8C2F-12C432B9FB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E4ABED8-D2AE-4B13-B293-AC4518EDB26A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC5D9D2-F444-4672-8D61-2E644E793749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC5D9D2-F444-4672-8D61-2E644E793749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC5D9D2-F444-4672-8D61-2E644E793749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC5D9D2-F444-4672-8D61-2E644E793749}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

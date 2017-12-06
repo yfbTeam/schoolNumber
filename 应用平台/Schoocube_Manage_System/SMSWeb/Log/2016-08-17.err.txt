@@ -1,0 +1,8 @@
+﻿运行时错误出现时间：2016/8/17 8:59:39
+错误原因：Thread was being aborted.
+
+
+运行时错误出现时间：2016/8/17 8:59:51
+错误原因：Thread was being aborted.
+
+

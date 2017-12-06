@@ -1,0 +1,87 @@
+
+img{ vertical-align:bottom;}
+.certificate{overflow:hidden;}
+.cert_tit{border-bottom: 2px solid #666; overflow:hidden;}
+.h4t{border-bottom:3px solid #374760;color:#2a3950;float:left;font-size:16px;font-weight:bold; height:30px; line-height:30px;}
+
+.cert_l{width:220px; float:left;}
+.cert_l .cert_tit{width:220px;}
+.cert_l h5{width:220px;font-size:14px; color:#1472b9;font-weight:700;height:35px; line-height:35px;}
+.cert_current{width:220px;border-bottom:1px dashed #ccc; padding-bottom:10px;}
+
+/*.cert_ul{ overflow:hidden;width:357px;}*/
+.cert_ul{ overflow:hidden;width:357px; margin-top:10px;}
+.cert_li{ float:left; margin-right:20px;width:99px; height:94px; margin-bottom:10px;}
+.cert_li .cert_img{ border:2px solid #fff; position:relative;}
+.cert_li .cert_img.active,.cert_li .cert_img:hover{ border:2px solid #777;}
+.cert_li .cert_img.active .selected{display:block; width:24px; height:24px; background:url(../images/24hook.png)  no-repeat; position:absolute; bottom:0; right:0;}
+.cert_li .cert_img .operate{width:16px; height:16px;position:absolute;top:2px;right:2px;  display:none; }
+.cert_li .cert_img .del{ display:block; width:16px; height:16px; background:url(../Images/16del.png) no-repeat;cursor:pointer;}
+.cert_li .cert_name{ padding-left:2px; height:20px; line-height:20px;font-size:14px;}
+
+.cert_li .cert_imgs{ border:2px solid #fff; position:relative;}
+.cert_li .cert_imgs.active,.cert_li .cert_imgs:hover{ border:2px solid #777;}
+.cert_li .cert_imgs.active .selected{display:block; width:24px; height:24px; background:url(../images/24hook.png)  no-repeat; position:absolute; bottom:0; right:0;}
+.cert_li .cert_imgs.operate{width:16px; height:16px;position:absolute;top:2px;right:2px;  display:none; }
+.cert_li .cert_imgs.del{ display:block; width:16px; height:16px; background:url(../Images/16del.png) no-repeat;cursor:pointer;}
+
+.vert_li{ float:left; margin-right:20px;width:99px; height:150px; margin-bottom:10px;}
+.vert_li .cert_img{ border:2px solid #fff; position:relative;}
+.vert_li .cert_img.active,.vert_li .cert_img:hover{ border:2px solid #777;}
+.vert_li .cert_img.active .selected{display:block; width:24px; height:24px; background:url(../images/24hook.png)  no-repeat; position:absolute; bottom:0; right:0;}
+.vert_li .cert_img .operate{width:16px; height:16px;position:absolute;top:2px;right:2px;  display:none; }
+.vert_li .cert_img .del{ display:block; width:16px; height:16px; background:url(../Images/16del.png) no-repeat;cursor:pointer;}
+.vert_li .cert_name{ padding-left:2px; height:20px; line-height:20px;}
+
+.vert_li .cert_imgs{ border:2px solid #fff; position:relative;}
+.vert_li .cert_imgs.active,.vert_li .cert_imgs:hover{ border:2px solid #777;}
+.vert_li .cert_imgs.active .selected{display:block; width:24px; height:24px; background:url(../images/24hook.png)  no-repeat; position:absolute; bottom:0; right:0;}
+.vert_li .cert_imgs.operate{width:16px; height:16px;position:absolute;top:2px;right:2px;  display:none; }
+.vert_li .cert_imgs.del{ display:block; width:16px; height:16px; background:url(../Images/16del.png) no-repeat;cursor:pointer;}
+
+.cert_r{width:460px; float:right;}
+
+.cert_view{ padding-top:15px;}
+.view_info{ padding:10px 0px;line-height: 18px; border-bottom:1px dashed #ccc; color:#888;font-size: 13px;}
+
+.cert_edit{ overflow:hidden; color:#333; padding-top:15px; cursor:default;}
+.cert_edit .tit{ float:left;width:75px; font-size:14px;text-align:right;}
+.cert_edit .con{ float:left;width:380px; padding-left:5px;}
+
+.cert_edit .con textarea{ width:365px; height:50px; padding:5px; border:1px solid #ccc; resize:none; overflow:auto;}
+.cert_edit .con .ipt{width:365px; height:26px; border:1px solid #ccc;padding:2px 5px; line-height:26px;}
+.cert_edit .con .iptr{width:365px; height:26px; border:1px solid Red;padding:2px 5px; line-height:26px;}
+.cert_edit .con p{ color:#666;}
+
+.cert_btns{ text-align:center; padding-top:65px;}
+.cert_btn,.cert_btn1{ width:80px; height:30px; cursor:pointer;color:#fff; border:0;}
+.cert_btn{background:#374760; }
+.cert_btn:hover{background:#475C7C; }
+.cert_btn1{background:#999; }
+.cert_btn1:hover{background:#aaa; }
+.cert_btns .cert_btn,.cert_btns .cert_btn1{ margin:0 5px;}
+
+.cert_edit .con .con_in{ overflow:hidden; padding-top:15px;height:30px;}
+.con_in .cert_btn{ float:left; margin-right:10px;}
+.con_in .sign{ float:left; height:30px; line-height:30px;}
+.con_in .sign span{ float:left;}
+.con_in .sign .close{ display:block; float:left; width:16px; height:16px; background:url(../images/16close.png) no-repeat; margin:7px 0 0 5px; cursor:pointer;}
+
+
+
+.certificate_box { overflow: hidden; padding-top: 20px; }
+.tips { color: #ff0000; margin-left: 30px; }
+
+.save { float:left;  background: #284a51; color: #fff; display: block; height: 30px; line-height: 30px; margin: 0 0 30px 200px; text-align: center; width: 80px;}
+
+.saves { float:left;  background: #CCC; color: #fff; display: block; height: 30px; line-height: 30px; margin: 0 0 30px 250px; text-align: center; width: 80px;}
+
+.cance { float:left; background: #999; color: #fff; display: block; height: 30px; line-height: 30px; margin: 0 0 30px 15px; text-align: center; width: 80px;}
+
+.Upload { float:left;  background: #374760 ; color: #fff; display: block; height: 30px; line-height: 30px;text-align: center; width: 80px;}
+
+.Uploads { float:left;  background: #ccc ; color: #fff; display: block; height: 30px; line-height: 30px;text-align: center; width: 80px;}
+
+.wod_btn { padding: 5px 10px 5px 10px; height: 20px; width: 60px; background: #1E5975; line-height: 20px; color: #fff; text-align: center; border: 1px solid #ccc; }
+.wod_btn:hover { background: #233f45; }
+.wrt_btn { padding: 5px 10px 5px 10px; height: 20px; width: 60px; background: #999999; line-height: 20px; color: #fff; text-align: center; border: 1px solid #ccc; }

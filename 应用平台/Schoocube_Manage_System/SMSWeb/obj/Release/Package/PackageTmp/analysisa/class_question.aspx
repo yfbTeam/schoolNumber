@@ -1,0 +1,202 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="class_question.aspx.cs" Inherits="SMSWeb.analysisa.class_question" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>问卷调查</title>
+    <!--图标样式-->
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/repository.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/onlinetest.css"/>
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <!--[if IE]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../js/menu_top.js"></script>
+    <script type="text/javascript" src="../Scripts/FusionChart/js/fusioncharts.js"></script>
+    <link rel="stylesheet" href="../css/Css.css" />
+    <script src="../js/jquery.kkPages.js"></script>
+    <script src="../Scripts/echarts-all.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div class="onlinetest_item width pr ">
+    <div  class="bordshadrad" style="background: #fff;padding:20px;">
+        <div class="stytem_select clearfix">
+            <div class="fl" style="margin-top:5px;">
+                <label style="float:left;line-height:38px;display:block;">图表类型：</label>
+                <select class="select" id="select_type">
+                    <option value="1" selected>3D</option>
+                    <option value="2">2D</option>
+                </select>
+            </div>
+        </div>
+        <div id="divPieChart" align="center" style="width:1000px;height:600px;margin:0 auto;"></div>
+        <div class="wrap">
+            <div class="distributed fr">
+                <a href="javascript:void(0);">导出数据</a>
+            </div>
+            <table>
+                <caption style="line-height: 40px;text-align:center;font-weight: bold;">问卷调查</caption>
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>分数</th>
+                        <th>分数段</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>罗秋香</td>
+                        <td>100分</td>
+                        <td>100分</td>
+                    </tr>
+                    <tr>
+                        <td>赵灵可</td>
+                        <td>96</td>
+                        <td>90-99</td>
+                    </tr>
+                    <tr>
+                        <td>谢章峰</td>
+                        <td>93</td>
+                        <td>90-99</td>
+                    </tr>
+                    <tr>
+                        <td>张红</td>
+                        <td>91</td>
+                        <td>90-99</td>
+                    </tr>
+                    <tr>
+                        <td>胡歌</td>
+                        <td>89</td>
+                        <td>80-89</td>
+                    </tr>
+                    <tr>
+                        <td>张琳</td>
+                        <td>88</td>
+                        <td>80-89</td>
+                    </tr>
+                    <tr>
+                        <td>石琳</td>
+                        <td>87</td>
+                        <td>80-89</td>
+                    </tr>
+                    <tr>
+                        <td>韩寒</td>
+                        <td>84</td>
+                        <td>80-89</td>
+                    </tr>
+                    <tr>
+                        <td>王丽</td>
+                        <td>84</td>
+                        <td>80-89</td>
+                    </tr>
+                    <tr>
+                        <td>左义</td>
+                        <td>82</td>
+                        <td>80-89</td>
+                    </tr>
+                    <tr>
+                        <td>袁熙</td>
+                        <td>81</td>
+                        <td>80-89</td>
+                    </tr>
+                    <tr>
+                        <td>唐叶</td>
+                        <td>78</td>
+                        <td>70-79</td>
+                    </tr>
+                    <tr>
+                        <td>郝旭</td>
+                        <td>76</td>
+                        <td>70-79</td>
+                    </tr>
+                    <tr>
+                        <td>林彤</td>
+                        <td>75</td>
+                        <td>70-79</td>
+                    </tr>
+                    <tr>
+                        <td>方晓</td>
+                        <td>74</td>
+                        <td>70-79</td>
+
+                    </tr>
+                    <tr>
+                        <td>王小明</td>
+                        <td>74</td>
+                        <td>70-79</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    $('.wrap').kkPages({
+        PagesClass: 'tbody tr', //需要分页的元素
+        PagesMth: 10, //每页显示个数
+        PagesNavMth: 4 //显示导航个数
+    });
+    function initChart() {
+        var xml = '<chart caption="问卷调查" numberPrefix="人数" ><set value="1" label="100分" color="AFD8F8" /><set value="3" label="90-99" color="F6BD0F" /><set value="7" label="80-89" color="8BBA00" /><set value="5" label="70-79" color="AFD8F8" /></chart>';
+        var myChart = new FusionCharts("../FusionCharts/Swf/Column3D.swf", "myChartId_02", '1000', "600");
+        myChart.setDataXML(xml);
+        myChart.render("divPieChart");
+    }
+    initChart();
+    $('#select_type').change(function () {
+        var val = $(this).val();
+        if(val ==1){
+            initChart();
+        }else if(val == 2){
+            var myChart = echarts.init(document.getElementById('divPieChart'));
+            option = {
+                title: {
+                    text: '问卷调查',
+                    x: 'center'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                calculable: true,
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: ['100分', '90-99', '80-89', '70-79']
+                    }
+                ],
+                yAxis: [
+                   {
+                       type: 'value',
+                       axisLabel: {
+                           formatter: '{value} 个'
+                       }
+                   }
+                ],
+                series: [
+                    {
+                        name: '问卷调查',
+                        type: 'bar',
+                        data: [1, 3, 7, 5],
+
+                    },
+
+                ]
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        }
+    })
+</script>
+    </div>
+    </form>
+</body>
+</html>

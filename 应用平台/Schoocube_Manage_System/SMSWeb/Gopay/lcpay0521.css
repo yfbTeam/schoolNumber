@@ -1,0 +1,240 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*-- initialize --*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,button,select,option,textarea,p,blockquote,th,td{padding:0;margin:0; font:12px/1.5 "Microsoft Yahei",Tahoma,"SimSun",arial;}
+body, html { outline:none;}
+fieldset,img { border: 0;vertical-align:top; outline:none;} 
+address,caption,cite,code,dfn,em,strong,th,var,i { font-weight: normal; font-style: normal; } 
+ol,ul,li { list-style: none; } 
+div,dl,dt,dd,ul,ol,li{ zoom:1; }
+caption,th { text-align: left; } 
+h1,h2,h3,h4,h5,h6 { font-weight:normal; font-size: 100%; } 
+abbr{ border: 0; }
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix { zoom:1; display:table;}
+a:focus, input[type=button] ,input[type=submit] {outline:none;}
+
+/*-- All CSS --*/
+body{background:#ffffff;color:#434a54;position:relative;  }
+a{ color:#434a54; text-decoration:none; outline:none;}
+a:hover {color:#fb7600; text-decoration:underline; }
+
+/*-- top css --*/
+.lcw-top .top-main{ width:980px; margin:0 auto;}
+.lcw-top .top-main, .tops-l, .mylc a, .t-r-menu { line-height:34px;}
+.mini-cart-bd a{  line-height:22px;}
+#menu-bd, .#menu-bd1{ display:none;}
+
+/*-- header css --*/
+.payheader{padding:20px 0; width:980px; margin:0 auto; display:table; height:40px; }
+.payheader div{ float:left;  height:50px;}
+.payheader .logo{width:149px;}
+.payheader .setup{width:367px; margin-left:175px;margin-top:10px; background:url(http://img.51liucheng.com/u/pay/setup.png) no-repeat;}
+.payheader .mobile{width:210px; float:right; margin-top:10px; background:url(http://img.51liucheng.com/u/pay/mobile.png) no-repeat;}
+
+/*-- pay content css --*/
+.lcpayWrap{ background:#f6f6f6; width:100%; border-top:1px solid #d4d4d4; display:table;  }
+.lcpay{ width:978px; margin:25px auto; margin-bottom:50px; border:1px solid #e8e8e8; border-top:3px solid #e0e0e0; border-bottom:none; display:table;  background:#ffffff url(http://img.51liucheng.com/u/pay/payboxb_03.jpg) no-repeat bottom; padding-bottom:40px;}
+.payPro{margin:15px 20px; background:#fdf6ef; height:32px;}
+.payPro .payable, .payPro .pro_pay_tit{  line-height:32px; font-size:14px;}
+.payPro .payable{ color:#2f2f2f; float:left; padding-left:12px;}
+.payPro .payable span{ color:#ff8000; font-size:18px; font-weight:bold; padding:0 5px 0 2px;}
+.payPro .payable a{ color:#018bd6; margin-left:40px;}
+.payPro .pro_pay_tit{ color:#2f2f2f; float:right; margin-right:12px;}
+.payPro .pro_pay_tit a{ color:#018bd6; margin-left:10px;}
+
+.paymain{margin:20px; margin-bottom:25px;}
+.Fpaylist{background:url(http://img.51liucheng.com/u/pay/listline.gif) no-repeat tOP; height:1px; width:940px;}
+.paylist{width:100%;  min-height:50px; border:3px solid #ffffff; width:934px; background:url(http://img.51liucheng.com/u/pay/listline.gif) no-repeat bottom; margin:2px 0 0px;}
+.paylist:hover{border:3px solid #e5edfe; width:934px; background:none; cursor:pointer; }
+.focusborder{ border:3px solid #9badd3; width:934px; background:none;}
+.focusborder:hover{border:3px solid #9badd3; }
+.iconRadio, .checkIconRadio, .cardbank, .paypt, .currencypay, .lcWallet, .zhaosbank{background:url(/images/payiconbg.png) no-repeat;}
+.iconRadio, .checkIconRadio{ float:left;width:18px; height:18px; background-position:0 -18px; margin:15px 15px 0 15px; }
+.checkIconRadio{  background-position:0 0px;  }
+.typepay{float:left; height:28px; margin-top:11px;  text-indent:35px; font-size:18px; line-height:24px; background-position:0 -62px;}
+
+.zhaosbank{ background-position:0 -921px; height:28px; width:100px; text-indent:-9999px;}
+.yhzhaosbank{ height:36px; width:130px; text-indent:-9999px; background:url(/images/payiconbgzh.png) no-repeat; margin-top:5px;}*/
+
+
+.cardbank{background-position:0 -62px;}
+.cardbank_info, .pingtpay, .waibipay{ clear:both; margin:0 0 15px 49px;display:table; padding-top:25px; min-height:40px;}
+.cardbank_info li, .pingtpay li, .waibipay li{ float:left; width:148px; height:38px; margin-right:40px; border:1px solid #c7c7c7; cursor:pointer;}
+.cardbank_info li img, .pingtpay li img, .waibipay li img{width:120px; height:30px; margin:4px 14px;}
+.cardbank_info .focusIcon, .pingtpay .focusIcon, .waibipay .focusIcon{width:146px; height:36px; background:url(/images/payiconbg.png) no-repeat 122px -322px; border:2px solid #fa9928;}
+.cardbank_info li:hover, .pingtpay li:hover, .waibipay li:hover{ border:1px solid #fa9928;}
+.cardbank_info li:hover img, .pingtpay li:hover img, .waibipay li:hover img{width:120px; height:30px; margin:4px 14px;}
+.cardbank_info .focusIcon:hover, .pingtpay .focusIcon:hover, .waibipay .focusIcon:hover{background:url(/images/payiconbg.png) no-repeat 122px -322px; border:2px solid #fa9928;}
+.cardbank_info .focusIcon:hover img, .pingtpay .focusIcon:hover img, .waibipay .focusIcon:hover img{width:120px; height:30px; margin:4px 14px; }
+
+.youhw{margin:0 10px 0 20px; float:left;}
+.youhw .youhxz{ background:#3e9ed0 ; color:#ffffff; font-size:12px; border-radius:3px; display:inline-block; padding:0px 5px; margin:16px 0 0 10px; }
+
+.dsaleDes{ font-size:14px; margin:10px 0 0 20px; display:table; float:left;}
+.dsaleDes span{ color:#ff8000; padding:0 2px;}
+.dsaleDes em{ margin-left:15px;}
+.dsaleDes em span{ font-size:18px; font-weight:bold;}
+
+.prosale{clear:both; margin:0 49px 15px 49px;display:table; padding-top:15px; min-height:40px;}
+.prosale .saleDes{ background:#fef9f2; border:1px solid #ffd6a7; padding:7px 10px; min-width:750px;}
+.prosale .saleDes p{ color:#585756; line-height:22px;}
+.prosale .saleDes .orderdes{color:#010101;}
+.prosale .saleDes .priceprompt{ display:inline-block; background:#e59441; height:16px; line-height:16px; color:#ffffff; padding:0px 5px; margin:1px 0; margin-left:10px; border-radius:3px;}
+.prosale .saleDes .bprice{ font-weight:bold; margin-left:10px;}
+
+.protal{ padding:10px 0 0;}
+.protal p{ font-size:14px;  margin-bottom:3px;}
+.protal p span{ color:#ff8000;}
+.protal .saletotal{ font-weight:bold;  padding:5px 0 0;}
+.protal .saletotal_price{ font-size:18px;}
+
+.wgpay{padding:10px 0 15px; margin:0 0 0 49px;}
+.wgpay .tags{width:830px;  border-bottom:1px solid #d9d9d9; display:inline-block;}
+.wgpay .tags li{ float:left; width:114px; }
+.wgpay .tags li a{font-size:16px; color:#494748;}
+.tags li a{ line-height: 30px; display:block;  padding:0 10px; text-align:center; text-decoration: none; position:relative; bottom:-1px; background:#f7f7f7; border-radius:2px; margin:0 10px 0 0;}
+.tags li a:hover{ background:#fff1e2;}
+.wgpay .tags li a:hover{ text-decoration:none;}
+.tags li.selectTag a{  color:#ff8000;  border:1px solid #c6c6c6; border-bottom:1px solid #ffffff; background:#ffffff; font-weight:bold;}
+.tagContent{display:none;  }
+.selectTag{display: block}
+.wyzf_con{margin:15px 0 10px 0px; display:table; }
+.wyzf_con li{ float:left; margin-right:20px;  line-height:30px; padding-top:15px;}
+.wyzf_con li span{ text-indent:-9999px;}
+.lcwallet_radio{margin-right:5px; padding: 0; vertical-align: middle; width: 13px;}
+.bank_logo{  cursor: pointer; display: inline-block; height: 30px; vertical-align: middle;width: 100px;}
+.gszf, .jsyy, .nyzf, .zszf, .jtzf, .zgzf, .gdzf, .mszf, .zxzf, .xyzf, .gfzf, .pfzf, .pazf, .shzf, .yzzf{ background:url(/images/payiconbg.png) no-repeat;}
+.gszf{ background-position: 0 -438px;}
+.jsyy{ background-position: 0 -468px;}
+.nyzf{ background-position: 0 -498px;}
+.zszf{ background-position: 0 -528px;}
+.jtzf{ background-position: 0 -558px;}
+.zgzf{ background-position: 0 -588px;}
+.gdzf{ background-position: 0 -618px;}
+.mszf{ background-position: 0 -648px;}
+.zxzf{ background-position: 0 -678px;}
+.xyzf{ background-position: 0 -708px;}
+.gfzf{ background-position: 0 -738px;}
+.pfzf{ background-position: 0 -768px;}
+.pazf{ background-position: 0 -798px;}
+.shzf{ background-position: 0 -828px;}
+.yzzf{ background-position: 0 -858px;}
+
+.paypt{background-position:0 -132px;}
+.payzfbBox{ margin:25px 55px 30px 49px;  border:1px solid #d9d9d9;  margin-bottom:20px; }
+.payzfb{ border:4px solid #f4f4f4; display:table; width:820px;}
+.weixinpay{ margin:20px; display:inline-block;}
+.weixinpay p{  float:left; }
+.weixinpay_des{ background:url(http://img.51liucheng.com/u/pay/weixin_06.jpg) no-repeat; width:287px; height:100px;margin:40px 40px 0 100px;}
+.weixinpay_des span{ font-size:16px; font-weight:bold; color:#ffffff; width:160px;display:inline-block; margin:30px 70px;}
+.weixinpay_ewm{float:left;}
+.weixinpay_ewm h2{position:relative;}
+.weixinpay_ewm .prompt{ position:absolute; top:-30px; left:0px;opacity:0;filter:alpha(opacity=0); transition:all 0.8s ease-in-out 0s; -webkit-transition:all 0.8s ease-in-out 0s;}
+.weixinpay_ewm .prompt img{height:232px;}
+.weixinpay_ewm .hover{top:-30px;left:190px;opacity:1;  filter:alpha(opacity=100);}
+
+.currencypay{background-position:0 -188px;}
+.paypelPay{float:left; margin-top:4px; }
+.paypelPay .payMY{ color:#008cd6; color:#008cd6; font-size:16px; font-weight:bold; }
+.paypelPay .payable_my{ font-size:14px; color:#2f2f2f;margin-left:20px;}
+.paypelPay .rmb_convert{ font-size:18px; font-size:18px; color:#ff8000; font-weight:bold;}
+.mdor{ padding-left:5px; font-weight:bold;}
+.paypelPay .my_beizhu{color:#484746; margin-left:20px; font-size:14px;}
+.waibipay .paypelPay{width:650px; border:none;}
+.waibipay .paypelPay:hover{ border:none; cursor:text;}
+
+.lcWallet{background-position:0 -232px;}
+.recharge{ float:left; margin-top:13px;display:none }
+.recharge .balance{ margin-left:30px; font-size:14px;}
+.recharge .priceco{ color:#ff8000;}
+.recharge .balance_not{color:#989595;  font-size:14px; margin-left:40px;}
+.recharge .balance_not a{ color:#018bd6;}
+
+.payPrompt{ height:26px; border:1px solid #fbcc9d; background:#fffbf7; color:#82827e; float:left; margin:9px 0 0 20px; line-height:26px;padding:0 5px; position:relative; display:nonee;}
+.zhifubaopt{ width:600px; height:44px; line-height:22px;}
+.payPromptIcon{background:url(/images/payiconbg.png) -15px -288px no-repeat; position:absolute; width:9px; height:15px; left:-9px; top:5px;}
+
+.gopay_btn{  margin:15px 0 0 49px; display:table; }
+.gopay_btn a:hover{ text-decoration:none;}
+.gopaysmit{width:158px; height:38px; display:block; background:#fb8e00 url(http://img.51liucheng.com/u/pay/payotherico_28.jpg) no-repeat; border-radius:3px; cursor:pointer; border:none; font-size:16px; color:#ffffff;}
+.gopaysmit:hover{background:#fb8e00 url(http://img.51liucheng.com/u/pay/payotherico_28.jpg) no-repeat 0 -38px;}
+
+.payment{ margin:30px 20px 0 20px;border-top:1px solid #e6e6e6; padding-top:5px;}
+.payment p{ font-size:14px; color:#8c8c8c; line-height:25px;}
+.payment p a{ color:#018bd6;}
+.payment p span{ color:#ff8000;}
+
+.lcwhelp{ position:fixed; right:50%; margin-right:-562px; top:280px; cursor:pointer; width:69px; height:204px; display:block; background:url(http://img.51liucheng.com/u/pay/lcwhelpbtn.png) no-repeat;}
+.lrlhd:hover{ 
+	animation: lrlhd 1s ease-in-out 2;
+	-moz-animation: lrlhd 1s ease-in-out 2;
+	-webkit-animation: lrlhd 1s ease-in-out 2;
+	-o-animation: lrlhd 1s ease-in-out 2;
+}
+@keyframes lrlhd{	
+	0%{ transform:translate(0px,0);}	
+	50%{transform:translate(10px,0);}
+	100%{transform:translate(0px,0);}	
+}
+@-moz-keyframes lrlhd{	
+	0%{ transform:translate(0px,0);}	
+	50%{transform:translate(10px,0);}
+	100%{transform:translate(0px,0);}	
+}
+@-webkit-keyframes lrlhd{	
+	0%{ transform:translate(0px,0);}	
+	50%{transform:translate(10px,0);}
+	100%{transform:translate(0px,0);}	
+}
+@-o-keyframes lrlhd{	
+	0%{ transform:translate(0px,0);}	
+	50%{transform:translate(10px,0);}
+	100%{transform:translate(0px,0);}	
+}
+
+/*zhi fu tan chuang */
+.theme-popover-mask{z-index: 9998; background:url(http://img.51liucheng.com/u/51images/paytcbg1.png) repeat;background:rgba(0,0,0,0.3); position:fixed;top:0;left:0;width:100%;height:100%; display:none; } /*zhe zhao*/
+.theme-popover{z-index:9999;background:url(http://img.51liucheng.com/u/51images/paytcbg2.png) repeat; background:rgba(0,0,0,0.25);position:fixed;top:50%;left:50%;display:none; padding:0px;width:600px; margin:-117px 0 0 -300px;} 
+.poyWait{margin:8px; background:#ffffff; width:584px; height:234px;}
+.poyWait h2{ background:#fff2ec; height:51px; }
+.poyWait .zsyhpic{ margin-left:12px; margin-top:10px; float:left;  font-size:16px; font-weight:bold; color:#666463; line-height:35px;}
+.poyWait .close_paytc{ float:right; margin-right:12px; margin-top:10px; cursor:pointer;}
+.waitOption{ height:94px; margin:40px 50px; text-align:center;}
+.waitOption div{ float:left;}
+.waitOption .payWaitIco{ margin:20px 40px 0 0; }
+.waitOption .succPay{ background:url(http://img.51liucheng.com/u/pay/paywaitbg_03.gif) no-repeat; width:167px; height:94px; margin-right:40px;}
+.waitOption .helpPay{background:url(http://img.51liucheng.com/u/pay/paywaitbg_05.gif) no-repeat; width:167px; height:94px;}
+.succPay h4, .helpPay h4{ font-size:16px; font-weight:bold; color:#ff8000; padding:10px 0 6px; }
+.helpPay h4, .helpPay p a:hover{ color:#0070ab;}
+.succPay p, .helpPay p{ font-size:14px; line-height:24px;}
+
+
+
+/*-- footer --*/
+.footer{width:1000px;  margin:25px auto; display:table; text-align:center;}
+.footer .bottom_a, .footer .bottom_a{padding:15px 0;}
+
+
+
+
+/*purse tc*/
+.purthemePopup{z-index:9998; background:url(http://img.51liucheng.com/u/51images/paytcbg1.png) repeat; background:rgba(0,0,0,0.5); position:fixed; top:0; left:0; width:100%; height:100%; display:none; } 
+.purpopupCont{z-index:9999; position:fixed;top:50%;left:50%;display:none; width:550px; margin:-180px 0 0 -275px; box-shadow:0px 0px 10px #727272; }
+.purpopupCont .purpopupMain{ background:#ffffff;height:360px; position:relative; border-radius:2px;}
+.purthemePoptit{height:44px; text-indent:10px;  background:#f3f3f3; line-height:44px; color:#5e5e5e; font-size:14px; font-weight:bold; border-radius:2px;}
+.purthemePoptit .purclose{float:right;color:#8e8e8e; font-size:32px; text-decoration:none; top:13px; position:absolute; right:10px; display:block; font-style:normal;font-weight:300; width:16px; height:16px; line-height:16px; text-indent:0; display:block; transition:all 0.35s ease-in-out 0s; -webkit-transition:all 0.35s ease-in-out 0s; font-family: Times, "Times New Roman", serif;} 
+.purthemePoptit .purclose:hover{ transform:rotate(180deg);  -webkit-transform:rotate(180deg);}
+.rechargeBox{margin:20px 25px; }
+.rechargeBox .rechargeCont{ margin:0 0 15px 35px; color:#414141;  display:table;}
+.rechargeBox .rechargeCont span{ display:block; float:left; text-align:right; width:80px; height:30px; line-height:30px; font-size:14px;}
+.rechargeBox .rechargeCont p{ float:left; height:30px; line-height:30px; font-size:14px; }
+.rechargeBox .rechargeCont p .amountNum{ height:28px; line-height:28px; width:190px; padding:0 5px; border:1px solid #d2d2d2; border-radius:2px; font-size:14px; color:#414141;}
+.rechargeBox .rechargeNext{ margin-left:115px; padding-top:5px; }
+.rechargeBox .rechargeNext .nextBtns a{ display:block; background:#ff8000; width:90px; height:30px; text-align:center; color:#ffffff; border-radius:2px;}
+.rechargeBox .rechargeNext .nextBtns a:hover{ background:#ef7800;}
+.rechargeBox .rechargeNext a{ text-decoration:none; margin-right:25px;}
+.rechargeBox .warmPrompt{ background:#fff9f6; border:1px solid #fbeada; color:#999999; font-size:14px; padding:8px 15px; display:table; margin-top:30px;}
+.rechargeBox .warmPrompt h2{ font-weight:bold; margin-bottom:3px;}
+.rechargeBox .warmPrompt p{ line-height:18px;}

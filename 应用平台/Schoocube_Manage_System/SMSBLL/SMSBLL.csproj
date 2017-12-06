@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CCFA1BC-45C2-4C74-94FA-CCA050FB2B85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMSBLL</RootNamespace>
+    <AssemblyName>SMSBLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseService.cs" />
+    <Compile Include="BaseService_HZ.cs" />
+    <Compile Include="BLLCommon.cs" />
+    <Compile Include="BLLTemplate_Cube.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BLLTemplate_Cube.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="partial\AdminManagerService.cs" />
+    <Compile Include="partial\CertificateManageService.cs" />
+    <Compile Include="partial\EnterpriseJobService.cs" />
+    <Compile Include="partial\EnterpriseService.cs" />
+    <Compile Include="partial\Exam_ExaminationService.cs" />
+    <Compile Include="partial\LibraryMenuService.cs" />
+    <Compile Include="partial\MonitorRecordService.cs" />
+    <Compile Include="partial\PersonDocumentService.cs" />
+    <Compile Include="partial\PaidCardManagementService.cs" />
+    <Compile Include="partial\SBTQ_AssoActivityService.cs" />
+    <Compile Include="partial\Course_WorkService.cs" />
+    <Compile Include="partial\StudentTrainService.cs" />
+    <Compile Include="partial\Exam_ExamPaperService.cs" />
+    <Compile Include="partial\AdvertisingService.cs" />
+    <Compile Include="partial\CourseService.cs" />
+    <Compile Include="partial\Course_ChapterService.cs" />
+    <Compile Include="partial\Course_EvalueService.cs" />
+    <Compile Include="partial\Couse_ResourceService.cs" />
+    <Compile Include="partial\Couse_SelstuinfoService.cs" />
+    <Compile Include="partial\Couse_TaskInfoService.cs" />
+    <Compile Include="partial\Exam_service.cs" />
+    <Compile Include="partial\NoticesService.cs" />
+    <Compile Include="partial\Notice_CourseSeeRelService.cs" />
+    <Compile Include="partial\SomeTableClickService.cs" />
+    <Compile Include="partial\SysMessageService.cs" />
+    <Compile Include="partial\Topic_GoodClickService.cs" />
+    <Compile Include="partial\TrainingFilesService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMSDAL\SMSDAL.csproj">
+      <Project>{eecc462f-4029-4364-989b-69620acece0c}</Project>
+      <Name>SMSDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSIBLL\SMSIBLL.csproj">
+      <Project>{03f34f9d-df87-4644-aa94-d1dd6c1b91c4}</Project>
+      <Name>SMSIBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSIDAL\SMSIDAL.csproj">
+      <Project>{4f963e30-d260-40b3-8c2f-12c432b9fb48}</Project>
+      <Name>SMSIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSModel\SMSModel.csproj">
+      <Project>{700a8b95-11a3-4329-87af-fd06bf33673c}</Project>
+      <Name>SMSModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSUtility\SMSUtility.csproj">
+      <Project>{01244982-0f85-4839-ae77-62f28484ffa1}</Project>
+      <Name>SMSUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BLLTemplate_Cube.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BLLTemplate_Cube.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

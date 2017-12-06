@@ -1,0 +1,1008 @@
+
+.header,.main,.bottom{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+.header{
+	height: 80px;
+	background: #0695d8;
+}
+.lfmain{
+	float: left;
+	width: 170px;
+	min-height: 600px;
+	overflow: hidden;
+	background:#f3f8fc;
+	border-right: solid 1px #c3ced5;
+}
+.rfmain{
+	background: #f2f2f2;
+	overflow: hidden;
+	padding-bottom:50px; 
+}
+/*组别管理弹窗页*/
+.gl_zubiebt{
+	width: 90%;
+	height: 40px;
+	margin: 30px auto 0;
+	line-height: 40px;
+	background: #3db8f1;
+	color: #fff;
+	border: solid 1px #b3e7fd;
+	border-radius: 5px 5px 0 0;
+	box-shadow: 0 0 3px #b3e7fd;
+	text-indent: 1em;
+}
+.gl_zubienr,.xj_wenjuannr{
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+	border: solid 1px #b4e6ff;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 0 3px #b4e6ff;
+}
+/*全体成员    _修改*/
+/*开始*/
+/*leftnav*/
+.left_navcon {  width:26%; background:#fff; min-height:584px; display: inline-block;}
+.left_navcon .icon {  border: 1px solid #666; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 15px; width: 5px; }
+.left_navcon .ici-menu:hover .icon {  background:#add0f6; border:1px solid #add0f6; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 15px; width: 5px; }
+/*select*/
+.left_navcon .ici-menu:hover .icon {  background:#add0f6; border:1px solid #add0f6; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 15px; width: 5px; }
+
+.left_navcon .icic-item:hover .icon {  background:#add0f6; border:1px solid #add0f6; border-radius: 60px; display: block;  float: left; height: 5px; line-height: 32px; margin-right: 6px; margin-top: 9px; width: 5px; }
+
+.select-box{ position:relative;}
+.i-menu {  height:38px;  line-height:38px; cursor:pointer; clear:both; padding-left:20px; color:#333; font-size: 14px; font-weight: bold;}
+.ici-menu{  height:38px;  line-height:38px; cursor:pointer; clear:both; padding-left:30px; color:#666;}
+.icic-item{  height:28px;  line-height:28px; cursor:pointer; padding-left:40px; clear:both; color:#999; }
+.icic-item .icon { margin-top:9px;}
+/*一级*/
+.item .i-menu  span.tubiao i { font-size:14px; font-weight: bold; margin-right:6px; color:#5b98d7;}
+span.tit { display:block; width:85%; font-size: 14px;}
+
+  .btn-area a{ font-size:12px; color:#333; }
+  .btn-area a:hover{  text-decoration:underline;   }   
+  .btn-area{ display:none; background: #fff ; border: 1px solid #5493d7; border-radius: 3px; color: red; display: none; line-height: 24px; margin-right: 5px; margin-top: 30px; padding: 0 4px;   position: absolute; right: 0;}
+  .ici-con,.i-con{display:none;}
+  .i-menu:hover,.ici-menu:hover,.icic-item:hover {  background:#f6f6f6;color:#666;  }
+ /*结束*/
+.zubie_navcon{
+	width: 20%;
+	height: 500px;
+	margin: 15px 0 0 10px;
+	border: solid 1px #e5e5e5;
+}
+.zubie_navcon .item{
+	margin: 0 0 6px 0;
+	background: #ecf0f3;
+	text-align: center;
+}
+.zubie_navcon .item:hover .btn-area{
+	display: block;
+	border: solid 1px #898989;
+}
+/*主要列表内容*/
+.gl_zubienr_list{
+	width: 76%;
+	min-height: 470px;
+	margin: 15px 10px 0 0;
+	border: solid 1px #e5e5e5;
+}
+/*组别条件搜索操作*/
+.zb_search span{
+	margin: 12px 10px 0 15px;
+	display: inline-block;
+}
+.zb_search span select,
+.zb_search span select option{
+	width: 100px;
+	height: 33px;
+	padding-left: 10px;
+	line-height: 33px;
+	text-align: center;
+	border: solid 1px #e0e0e0;
+	border-radius: 5px;
+	display: block;
+}
+.zb_search span:last-child select,
+.zb_search span:last-child select option{
+	width: 125px;
+}
+.zb_search span input{
+	width: 130px;
+	height: 25px;
+	padding:3px 63px 3px 10px;
+	outline: none;
+	border: solid 1px #e0e0e0;
+	border-radius: 5px;
+}
+.zb_search span input.zb_ss{
+	width: 61px;
+	height: 31px; 
+	margin:0 0 0 -65px;
+	padding: 0;
+	text-align: center;
+	line-height: 32px;
+	background: #f5f5f5; 
+	cursor: pointer;
+}
+.zb_search span input.zb_ss:active{
+	background: #dddbdb;
+}
+.zb_search .btn_add{float:right;margin: 12px 10px 0 15px;}
+.zb_search .btn_add a{
+	min-width: 40px;
+	height: 31px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 31px;
+	background: #00a0ea;
+	border-radius: 5px;
+	border: solid 1px #0093d9;
+	color: #fff;
+	display: block;
+    float:right;
+    margin-right:10px;
+}
+/*组别管理列表*/
+.zb_list ul{
+	margin: 10px 10px 0 15px;
+	border: solid 1px #e1e1e1;
+	display: inline-block;
+    float:left;
+}
+.zb_list ul li{
+	width: 183px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+    float:left;
+}
+.zb_list ul li:first-child{
+	border-top: none;
+	background: #f1f1f1;
+    width:100%;
+}
+.zb_list ul li:hover{
+	background: #f0f7fd;
+}
+.zb_list ul li span{
+	width: 42px;
+	text-align: center;
+	border-right: solid 1px #e1e1e1;
+	border-left: solid 1px #e1e1e1;
+	display: inline-block;
+}
+.zb_list ul li span input{
+	width: 15px;
+	height: 15px;
+	background: #fff;
+}
+.zb_list ul li p{
+	width: 116px;
+	text-align: center;
+	display: inline-block;
+}
+/*18英语特色_英文写作_我的作文学生 页面*/
+.my_kc{
+	margin: 17px 15px 20px 15px;
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	box-shadow: 0 0 5px #e6e6e6;
+}
+.my_kc_xxk{
+	height: 42px;
+	background: #f0f0f0;
+	border-bottom: solid 1px #e3e3e3;
+}
+.my_kc_xxk ul li{
+	width: 125px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	float: left;
+    cursor: pointer;
+}
+.my_kc_xxk ul li a{
+	color: #757575;
+	font-size: 14px;
+}
+.my_kc_xxk ul li.active{
+	background: #fff;
+	border-right: solid 1px #e3e3e3;
+	border-left: solid 1px #e3e3e3;
+	border-top: solid 2px #01b1ed;
+}
+/**********列表开始*/
+/*我的作文列表样式更改增加*/
+.zuowen_listbt,
+.zuowen_listnr,
+.kksq_listbt,		
+.kksq_listnr{
+	width: 98%;
+	margin: 0 auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+.zuowen_listbt tr{
+	width: 100%;
+	border: solid 1px #e8e8e8;
+}
+.zuowen_listbt tr td,
+.zuowen_listbt tr th{
+	
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #f5f5f5;
+	border-left: solid 1px #e8e8e8;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.zuowen_listbt tr th{
+	background: #eeeeee;	
+	font-weight: normal;
+}
+.zuowen_listbt tr td input.title{
+    width: 200px;
+	height: 25px;
+	padding: 2px 5px;
+	border-radius: 5px;line-height:25px;}
+.zuowen_listbt tr td.shenqing{padding-right:30px}
+.zuowen_listbt tr td.shenqing{padding-right:30px}
+.zuowen_listbt tr td.shenqing a{
+	width: 58px;
+	height: 28px;
+	margin: 10px auto 0;
+	text-align: center;
+	line-height: 28px;
+	background: #00a0ea;
+	border-radius: 3px;
+	border: solid 1px #0093d9;
+	color: #fff;
+	display: block;
+    float:left;
+    margin-left:10px;
+} 
+.zuowen_listbt tr .title,
+.kksq_listbt tr .title,
+.kksq_listnr tr .title,
+.sska_table tr .title{
+	width: 380px;
+	height: 40px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.zuowen_listbt tr td:first-child,
+.zuowen_listbt tr th:first-child{
+	width: 30px;
+	border-left: none;
+	text-overflow:ellipsis;
+}
+.zuowen_listbt tr td:last-child,
+.zuowen_listbt tr th:last-child,
+.kksq_listbt tr td:last-child,
+.kksq_listbt tr th:last-child,
+.kksq_listnr tr td:last-child{
+	width: 43px;
+}
+.zuowen_listbt tr td i,
+.kksq_listbt tr td i{
+	width: 15px;
+  height: 15px;
+  margin: 10px 10px 0 0;
+  line-height: 13px;
+ 	text-align: center;
+ 	-moz-border-radius: 15px; /* Firefox */
+  -webkit-border-radius: 15px; /* Safari 和 Chrome */
+ 	border-radius: 15px;
+  border: solid 1px #9c9c9c;
+  font-style: normal;
+  float: right;
+  cursor: pointer;
+}
+.zuowen_listbt tr td span.iconfont{
+	font-size: 26px;
+}
+.zuowen_listbt tr td span.red{color:#ff6d72;}
+.zuowen_listnr{
+	border: solid 1px #e8e8e8;
+	border-top: none;
+	line-height: 24px;
+}
+.zuowen_listnr p{
+	width: 96%;
+	padding: 0 2%;
+	text-indent: 2em;
+}
+.zuowen_listnr div{
+	width: 96%;
+	padding: 0 2%;
+	background: #ecf7fd;
+	border-top: solid 1px #dbf1fc;
+}
+.zuowen_listnr div span{
+	width: 100%;
+	display: block;
+}
+
+/*****列表结束*/
+/*公用标题开始*/
+.ty_biaoti{
+	height: 32px;
+	margin: 15px 10px 0 10px;
+	line-height: 32px;
+	border-bottom: solid 2px #e1e1e1;
+}
+.ty_biaoti span{
+	padding: 0 5px 0 10px;
+	font-size: 16px;
+	float: left;
+	cursor: pointer;
+}
+.ty_biaoti span.active{
+	border-bottom: solid 2px #01b1ed;
+}
+.ty_biaoti p{
+	width: 50px;
+	margin: 0 0 0 0;
+	text-align: right;
+	cursor: pointer;
+	float: right;
+}
+/*公用标题结束*/
+/*学生日常行为规范考评开始*/
+.shijuan_nr{
+	width: 750px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.shijuan_nr h1{
+	width: 100%;
+	height: 36px;
+	margin: 13px 0 0 0;
+	line-height: 36px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 18px;
+}
+.fubiaoti{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #8c8c8c;
+}
+.fubiaoti p{
+	margin: 0 15px 0 0;
+	display: inline-block;
+
+}
+.fubiaoti p span{
+	color: #f24242;
+}
+.zhubiaoti{
+	width: 100%;
+	height: 29px;
+	line-height: 29px;
+	background: #e6e6e6;
+	font-size: 14px;
+}
+.zhubiaoti h2{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.zhubiaoti span {
+    float:right;margin-right:20px;cursor:pointer
+}
+.zhubiaoti_nr{
+	width: 95%;
+	margin: 5px auto;
+	font-weight: bold;
+}
+.zhubiaoti_nr li{
+	width: 100%;
+     padding: 0 0 15px 0;
+	border-bottom: solid 1px #f1f1f1;
+}
+.zhubiaoti_nr li:last-child{
+	border-bottom: none;
+}
+.zhubiaoti_nr li p{
+	height: 40px;
+	line-height: 40px;
+}
+.zhubiaoti_nr li p:after{
+	content: '*';
+	margin: 0 0 0 10px;
+	color: #ff0000;
+}
+.zhubiaoti_nr li label{
+	width: 100%;
+	display: inline-block;
+    margin:3px 0;
+}
+.sj_tijiao{
+	width: 100%;
+	padding: 45px 0;
+	text-align: center;
+	border-top: solid 1px #e6e6e6;
+}
+.sj_tijiao a{
+	width: 120px;
+	height: 38px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 38px;
+	display: inline-block;
+	color: #fff;
+	background: #00a1ec;
+	border-radius: 5px;
+}
+/*学生日常行为规范考评结束*/
+/*06.学生宿舍管理_学生住宿安排_单个调整开始*/
+/*查询list----宿舍类型选择*/
+.screenBox {width:98%; border-left:1px solid #84d3f4; border-top:1px solid #84d3f4; margin:10px auto ;}
+.screenBox dl { background:#38b4f0 ; border-bottom:1px solid #84d3f4; border-right:1px solid #84d3f4; overflow: hidden; width:99.9%;}
+.dlHeight { height: 38px;}
+.screenBox dl dt { padding:6px 0; font-weight: 600; float: left; text-align: left; width: 10%; line-height:30px; color:#fff; background:#38b4f0; text-align:center;}
+.screenBox dl dd { border-left:1px solid #84d3f4; background:#e0f4fd; float: left; padding-left: 0; padding-top: 0; position: relative; vertical-align: middle; width: 89.86%;}
+.screenBox dl dd label { color: #666; display: block; float: left; line-height: 30px; padding:6px; overflow: hidden; text-decoration: none;  vertical-align: middle; cursor:pointer}
+
+.screenBox dl dd label a { padding:0 4px; display: inline-block;  }
+.screenBox dl dd label a:hover,.screenBox dl dd label a.active { display: inline-block; background:#00a1ec ; color:#fff;   }
+.screenBox dl dd span.more {color: #b2aead;  cursor: pointer; display: block;  height: 30px;  position: absolute;top:12px; right: 0px; width: 32px;}
+/*****************************************************************************分配实习学生**************************************************/
+.Assignment_form {width: 98%; margin: 10px auto;min-height: 325px;}
+
+.left_form { width:47%;}
+.left_form h3.trth  { padding-left: 10px; line-height:34px; background:#39ac51; color:#fff;}
+.left_form .PL_form { width:100%; text-align:center;}
+.left_form .PL_form tr th   {text-align: center; line-height:34px;border:1px solid #ecf2e6;background:#fcfffa; }
+.left_form .PL_form tr td  { border:1px solid #ecf2e6; line-height:28px; background:#fcfffa;}
+
+/*btn*/
+.LR_btn { width:5%;margin-top:100px;}
+.LR_btn .leftbtn { background:url(/_layouts/15/Stu_images/leftbtn.png) no-repeat; width:20px; height:30px; border:none;}
+.LR_btn a { text-align:center; margin:auto; margin-bottom:10px; display:block; cursor:pointer;}
+.LR_btn .rightbtn { background: url(/_layouts/15/Stu_images/rightbtn.png) no-repeat; width:20px; height:30px; border:none;}
+
+.right_form { width:47%;}
+.right_form h3.trth  { padding-left: 10px; background:#ff666b; line-height:34px; color:#fff;}
+.right_form .PR_form {  width:100%;text-align:center;}
+.right_form .PR_form .sear .times_input input.time {}
+.sear .times_input  input.time {  border:1px solid #fff; border-radius:3px; height:24px;  width:102px;padding-left:4px;background:#ff666b;}
+.sear .times_input  input.time:hover { border:1px solid #5493d7; }
+.sear input.b_query {  margin-right: 10px; border-radius:3px; background:#5493d7; border:none; color:#fff; padding:0 4px; line-height:24px; height:26px;}
+.right_form .PR_form tr th   { text-align: center; line-height:34px;border:1px solid #ffe5e6;background:#fffafa; }
+.right_form .PR_form tr td  { border:1px solid #ffe5e6; line-height:28px; background:#fffafa;}
+
+.left_form .page{ background:#fcfffa;}
+.right_form .page{ background:#fffafa;}
+/*分页*/
+.page {text-align: center; padding:10px 0; font-size:12px;}
+.page span { margin:0 5px;}
+.page span.number a { margin: 0 4px; padding:2px 8px; background:#01b1ed; border-radius:3px; color:#fff; }
+   .page span.now {
+        background: #5593d7;
+        border: 1px solid #0494d6;
+        color: #fff;
+    }
+     /*分页*/
+.paging {
+    font-family:"Microsoft Yahei UI","Microsoft Yahei","微软雅黑",SimSun,sans-serif;
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+    clear:both;
+    color:#757575;
+}
+.paging span a{ cursor:pointer;padding:0 4px;}
+.paging span .number { background:#fff; border: 1px solid #d7d7d7; color:#757575;padding:0px 5px; border-radius:3px;}
+.paging span .now { background:#01b0ef; border: 1px solid #0494d6; color:#fff;}
+/*补充*/
+.activity {
+margin: 15px;
+clear: both;
+overflow: hidden;
+}
+.activity ul {
+width: 205px;
+height: 283px;
+margin: 5px 3px 5px 3px;
+/*background: #f8f8f8;*/
+border: solid 1px #ededed;
+box-shadow: 0 0 3px #dedede;
+float: left;
+overflow: hidden;
+}
+.activity ul li {
+width: 205px;
+margin: 0 auto;
+overflow: hidden;
+}
+.activity ul li img {
+    width: 205px;
+    height: 127px;
+    margin: 3px 0 15px 0;
+}
+.activity ul li h2 {
+    margin: 0 0 0 0;
+    font-size: 14px;
+    /*font-weight: normal;*/
+    color: #0da6ec;
+}
+.activity ul li i {
+    margin: 0 10px 0 0;
+    color: #aaaaaa;
+    margin-left:10px;
+}
+
+.zs_beizhu{
+	height: 46px;
+	line-height: 46px;
+	background: #fcfffa;
+	border-right: 1px solid #ecf2e6;
+	border-left: 1px solid #ecf2e6;
+}
+.zs_beizhu span{
+	margin: 5px;
+	display: inline-block;
+}
+.zs_beizhu span a,
+.LR_btn_anniu{
+	width: 74px;
+	height: 27px;
+	margin: 8px 0 0 0;
+	text-align: center;
+	line-height: 27px;
+	display: block;
+	background: #00a1ec;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 12px;
+}/*宿舍对调按钮 LR_btn_anniu*/
+.LR_btn a.LR_btn_anniu{
+	width: 55px;
+	margin: 0 5px;
+}
+.zs_beizhu_w{
+	background: #fffafa;
+	border-right: 1px solid #ffe5e6;
+	border-left: 1px solid #ffe5e6;
+}
+.zs_beizhu_w span{
+	margin: 0 5px 0 10px;
+}
+.zs_beizhu_w span input,
+.zs_beizhu_w span select{
+	width: 125px;
+	height: 26px;
+	padding: 0 5px 0 5px;
+	border: solid 1px #d3d3d3;
+	border-radius: 5px;
+	background: #fff;
+}
+/*****************************************************************************分配实习学生**************************************************/
+/*宿舍调整页面 颜色调整*/
+/*绿色 查询list*/
+.screenBox_lv{
+	border-left: 1px solid #c0e3c2;
+  border-top: 1px solid #c0e3c2;
+}
+.screenBox_lv dl {
+  background: #4ab361;
+  border-bottom: 1px solid #c0e3c2;
+  border-right: 1px solid #c0e3c2;
+}
+.screenBox_lv dl dt {
+	background: #4ab361;
+}
+.screenBox_lv dl dd {
+	background: #e3f3e8;
+  border-left: 1px solid #c0e3c2;
+}
+/*橙色 查询list*/
+.screenBox_ju{
+	border-left: 1px solid #fed2ab;
+  border-top: 1px solid #fed2ab;
+}
+.screenBox_ju dl {
+  background: #ff9338;
+  border-bottom: 1px solid #fed2ab;
+  border-right: 1px solid #fed2ab;
+}
+.screenBox_ju dl dt {
+	background: #ff9338;
+}
+.screenBox_ju dl dd {
+  border-left: 1px solid #fed2ab;
+  background: #ffeee0;
+}
+/*橙色 目标宿舍表格*/
+.right_form h3.trth {
+  background: #ff8a23;
+}
+
+/*06.学生宿舍管理_学生住宿安排_单个调整结束*/
+/*08学生宿舍管理_住宿查看班主任纬度开始*/
+.sska_table{
+	width: 98%;
+	margin: 0 auto;
+	border: solid 1px #e1e1e1;
+	border-top: none;
+	border-right: none;
+}
+.sska_table td,
+.sska_table th{	
+	height: 32px;
+	vertical-align: middle;
+	text-align: center;
+	border-top: solid 1px #e1e1e1;
+	border-right: solid 1px #e1e1e1;
+	color:#4d4d4d;
+}
+.sska_table tr th{
+	height: 36px;
+	background: #f1f1f1;
+}
+.sska_table tr:hover{
+	background: #f0f7fd;
+}
+.sska_table tr:first-child:hover{
+	background: #f1f1f1;
+}
+.sska_table tr td.title{text-align:left;padding-left:10px;}
+.sska_table tr td.title input{width: 300px;
+	height: 25px;
+	padding: 2px 5px;
+	border-radius: 5px;line-height:25px;}
+.sska_table tr td.shenqing{padding-left:30px}
+.sska_table tr td.shenqing a{
+	width: 58px;
+	height: 28px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 28px;
+	background: #00a0ea;
+	border-radius: 3px;
+	border: solid 1px #0093d9;
+	color: #fff;
+	display: block;
+    float:left;
+    margin-left:10px;
+} 
+/*学生宿舍管理_请假页面按钮*/
+.select{ background-color:#00a1ec;height:24px;width:50px;color:white;border:0px; line-height:25px;border-radius:3px;display:inline-block;cursor:pointer; }
+/*08学生宿舍管理_住宿查看班主任纬度结束*/
+/*03校本选修课_开课老师申请页面开始*/
+/*查询条件开始*/
+.zb_search_xxk{
+	width: 100%;
+	clear: both;
+}
+.zb_search_xxk span{
+	margin: 12px 5px 10px 10px;
+	display: inline-block;
+}
+.zb_search_xxk span select,
+.zb_search_xxk span select option{
+	width: 168px;
+	height: 33px;
+	padding-left: 10px;
+	line-height: 33px;
+	text-align: center;
+	border: solid 1px #e0e0e0;
+	border-radius: 5px;
+	display: block;
+}
+/*查询条件结束*/
+/*列表开始*/ 
+.kksq_listbt tr{
+	width: 100%;
+	border-bottom: solid 1px #d2d2d2 !important;
+	border-bottom: solid 1px #d2d2d2;
+	*border-bottom: solid 1px #d2d2d2;
+}
+.kksq_listbt tr:hover{
+	background: #f0f7fd;
+}
+.kksq_listbt tr td,
+.kksq_listbt tr th,
+.kksq_listnr tr td{
+	width: 15%;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;	
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.kksq_listbt tr th{
+	height: 40px;
+	line-height: 40px;
+	background: #f1f1f1;
+}
+.kksq_listbt tr .title,
+.kksq_listnr tr .title{
+	height: 32px;
+}
+.kksq_listbt tr td.shenqing a{
+	width: 58px;
+	height: 28px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 28px;
+	background: #00a0ea;
+	border-radius: 3px;
+	border: solid 1px #0093d9;
+	color: #fff;
+	display: block;
+} 
+.kksq_listnr{
+	border-bottom: solid 1px #d2d2d2;
+}
+.kksq_listnr tr{
+	width: 100%;
+}
+/*列表结束*/
+
+/*03校本选修课_开课老师申请页面结束*/
+/*06学生评价_问卷管理_新建试卷_选题页面开始*/
+.gl_zubiebt i {
+  width: 25px;
+  height: 35px;
+  margin: 0 15px 0 0;
+  line-height: 35px;
+  text-align: center;
+  /*font-weight: bold;*/
+  font-style: normal;
+  font-size: 22px;
+  cursor: pointer;
+  float: right;
+}
+/*进度条开始*/
+.project-screening{background:#d9d9d9 repeat-x;width:520px;margin:50px auto 25px;position:relative;height:10px;}
+.screening-select{background:#dbdbdb ;width:30px;height:30px;text-align: center;line-height: 30px; color: #fff;border: solid 1px #cdcdcd;border-radius: 50%; position:absolute;top:-12px;cursor:pointer}
+.select-1{left:-1px;}
+.select-2{left:50%;}
+.select-3{left:100%;}
+.project-screening-yellow{background:#0F3 no-repeat;height:9px;overflow:hidden;width:0;border-radius:10px;}
+.screening-select a{position:absolute;left:-15px;top:-27px;white-space:nowrap;margin:0;padding:0;line-height:none;width:56px; text-align:center;line-height:16px;font-size:14px;}
+.screening-select a:hover,.screening-select a.active{color:#0ea7eb;}
+.project-screening .select-1-yellow{background:#10a7ec;width:30px;height:30px;text-align: center;line-height: 30px; color: #fff;border: solid 1px #10a7ec;border-radius: 50%; position:absolute;left:-1px;bottom:-10px;z-index:3}
+/*进度条结束*/
+.xj_wenjuannr{
+	padding-top: 10px;
+}
+/*组别展开收缩开始*/
+.screenBox_xt{
+	border-left: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+}
+.screenBox_xt dl {
+  background: #fff;
+  border-bottom: 3px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  overflow: hidden;
+  width: 99.9%;
+}
+.screenBox_xt dl dt {
+	background: #fbfbfb;
+	color: #454545;
+}
+.screenBox_xt dl dd {
+  border-left: 1px solid #e5e5e5;
+  background: #fff;
+}
+/*组别展开收缩结束*/
+.zb_search_xt{
+	margin-top: -16px;
+	float: right;
+	text-align: right;
+}
+.zb_add a{
+	/*width: 58px;*/
+	height: 28px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 28px;
+	background: #00a0ea;
+	border-radius: 3px;
+	border: solid 1px #0093d9;
+	color: #fff;
+	display: block;
+    float:right;
+    margin-right:10px;
+}
+.xuanti{
+	width: 98%;
+	margin: 0 auto;
+}
+.newsj_xt{
+	width: 98%;
+  height: 530px;
+  margin: 10px 0 0 0;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  clear: both;
+}
+.sska_table_xt{
+	width: 100%;
+	margin: 0 auto 1px;
+}
+/*滚动条样式开始*/
+#lfnav_letter{width: 100%; height: 274px;margin-top: 10px;}
+
+.jspContainer{overflow:hidden;position:relative;}
+.jspPane{position:absolute;width: 100%;}
+.jspVerticalBar{position:absolute;top:0;right:0;width:7px;height:100%;background:transparent;}
+.jspVerticalBar:hover{border:solid 1px #a1aab0; box-shadow:inset 2px 2px 3px #d2d2d2;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.jspHorizontalBar{position:absolute;bottom:0;left:0;width:100%;height:14px;background:transparent;}
+.jspVerticalBar *,.jspHorizontalBar *{margin:0;padding:0;}
+.jspCap{display:none;}
+.jspHorizontalBar .jspCap{float:left;}
+.jspTrack{background:transparent;position:relative;}
+.jspDrag{background:#c2c6ca;border:solid 1px #b0b4b7;position:relative;top:0;left:0;cursor:pointer;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.jspDrag:hover{background:#8d8f91;border:solid 1px #61676a;}
+.jspHorizontalBar .jspTrack,.jspHorizontalBar .jspDrag{float:left;height:100%;}
+.jspArrow{background:#50506d;text-indent:-20000px;display:block;cursor:pointer;}
+.jspArrow.jspDisabled{cursor:default;background:#80808d;}
+.jspVerticalBar .jspArrow{height:16px;}
+.jspHorizontalBar .jspArrow{width:16px;float:left;height:100%;}
+.jspVerticalBar .jspArrow:focus{outline:none;}
+.jspCorner{background:#eeeef4;float:left;height:100%;}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner{margin:0 -3px 0 0;}
+/*滚动条样式结束*/
+
+/*06学生评价_问卷管理_新建试卷_选题页面结束*/
+/*08英语特色_校报管理_新建分期页面开始*/
+.xjfq_list{
+	width: 98%;
+	margin: 0 auto;
+	color: #4c4c4c;
+	overflow: hidden;
+}
+.xjfq_list li{
+	width: 100%;
+	margin-top: 10px;
+	clear: both;
+	overflow: hidden;
+}
+.xjfq_list li span{
+	margin: 0 0 0 10px;
+	vertical-align: top;
+	display: inline-block;
+}
+.redspan{
+	color: #f00;
+}
+.xjfq_list li span.span_tit{text-align:right;padding-right:3px;}
+.xjfq_list li span.span_input{text-align:left;padding-left:3px;}
+.xjfq_list li span input{
+	width: 300px;
+	height: 28px;
+	padding: 2px 5px;
+	border-radius: 5px;
+}
+.xjfq_list li span textarea{
+	width: 450px;
+	height: 70px;
+	border-radius: 5px;
+}
+.xjfq_list li a{
+	width: 160px;
+	height: 40px;
+	margin: 10px auto;
+	text-align: center;
+	line-height: 40px;
+	background: #0da6ec;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+}
+/*发布博文弹窗页"提交""取消"按钮：*/
+.fabw_btn{
+	width: 300px;
+	margin: 0 auto;
+}
+.fabw_btn a{
+	float: left;
+}
+.fabw_btn a.fabw_btn_qx{
+	width: 72px;
+	height: 38px;
+	margin: 10px 0 10px 25px;
+	border: solid 1px #d0d0d0;
+	background: #fdfbfc;
+	color: #4c4c4c;
+}
+/*08英语特色_校报管理_新建分期页面结束*/
+/*17英语特色_英文写作_题库管理_学生选题进行写作弹窗页面开始*/
+.xz_content{
+	padding: 5px 0;
+	margin: 0 20px 0 28px;
+	line-height: 30px;
+	color: #4c4c4c;	
+	font-size: 14px;
+}
+.xz_content h2{
+	width: 100%;
+	height: 46px;	
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	overflow: hidden;
+}
+.xz_content p{
+	padding-bottom: 5px;
+	margin: 0 10px;
+	text-indent: 2em;
+	border-bottom: solid 1px #cccccc;
+}
+
+/*17英语特色_英文写作_题库管理_学生选题进行写作弹窗页面结束*/
+
+
+.more_file .btn{
+    width: 160px;
+	height: 40px;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 40px;
+	background: #0da6ec;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+}
+.more_file{
+	width: 98%;
+	margin: 0 auto;
+	color: #4c4c4c;
+	overflow: hidden;
+}
+.more_file li{
+	width: 100%;
+	margin-top: 10px;
+	clear: both;
+	overflow: hidden;
+}
+.more_file li span{
+	margin: 0 0 0 10px;
+	vertical-align: top;
+	display: inline-block;
+}
+.more_file li span.span_tit{text-align:right;padding-right:3px;}
+.more_file li span.span_input{text-align:left;padding-left:3px;}
+.file_main ul{border:1px solid #84d3f4;}
+/***************************************************结束*/
+.back {float:right;padding-right:3px;}
+.back a{
+    width: 160px;
+	height: 40px;
+	margin: 10px auto;
+	text-align: center;
+	line-height: 40px;
+	background: #0da6ec;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+}
+
+.title_left{padding:10px;font-size: 14px;}
+
+.xjfq_list .d_line{border-bottom:1px solid #d2d2d2;}
+
+
+
+
+

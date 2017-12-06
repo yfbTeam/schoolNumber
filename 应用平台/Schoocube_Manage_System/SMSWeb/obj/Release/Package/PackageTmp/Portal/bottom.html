@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="../Scripts/jquery-1.11.2.min.js"></script>
+    <script src="../Scripts/Common.js"></script>
+    <script src="../Scripts/jquery.cookie.js"></script>
+    <link href="../PortalCss/reset.css" rel="stylesheet" />
+    <style>
+        .width {
+            width: 1024px;
+            margin: 0 auto;
+        }
+        /*footer*/
+        .footer {
+            width: 100%;
+            height: 175px;
+            background: #595959;
+        }
+
+        .foot_left {
+            padding: 55px 0px;
+        }
+
+            .foot_left p {
+                font-size: 14px;
+                color: #fff;
+                line-height: 22px;
+            }
+
+                .foot_left p a {
+                    ont-size: 14px;
+                    color: #fff;
+                }
+
+        .erweima {
+            width: 130px;
+            height: 130px;
+            display: block;
+            margin-top: 22px;
+        }
+
+        .fot_con {
+            margin-top: 22px;
+            width: 160px;
+            margin-left: 10px;
+        }
+
+            .fot_con .mes {
+                font-size: 16px;
+                color: #fff;
+                line-height: 30px;
+            }
+
+        .share {
+            margin-left: -8px;
+            margin-top: 15px;
+        }
+
+            .share a {
+                float: left;
+                margin-left: 8px;
+            }
+
+        .share_a {
+            display: block;
+            width: 34px;
+            height: 34px;
+            background: url(../PortalImages/sprite.png) no-repeat;
+        }
+
+        .share_weibo {
+            background-position: -32px -30px;
+        }
+
+        .share_weixin {
+            background-position: -74px -30px;
+        }
+
+        .share_qq {
+            background-position: -116px -30px;
+        }
+
+        .share_sina {
+            background-position: -158px -30px;
+        }
+
+        .share a p {
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="footer_con width">
+            <div class="foot_left fl" id="footerAdmin">
+                <p>地址：北京市海淀区中关村环保科技示范园内（海淀区北清路）</p>
+                <p>传真：010-62463259 网址：<a href="#" onclick="javascript: SendUrl('http://www.bjybjx.cn')">http://www.bjybjx.cn</a></p>
+                <p>电子邮件（E-MAIL）:yqybjxzb@sohu.com  网站设计/技术支持：圣邦天麒 <span style="margin-left: 20px;">网站统计：<i>30</i></span></p>
+            </div>
+            <div class="foot_right fr clearfix">
+                <span class="erweima fl">
+                    <img src="../PortalImages/erweima.png" alt="" />
+                </span>
+                <div class="fot_con fl">
+                    <div class="mes">关注我校官方微信平台实时了解最新动态</div>
+                    <div class="share">
+                        <a href="">
+                            <i class="share_a share_weibo"></i>
+                            <p>微博</p>
+                        </a>
+                        <a href="">
+                            <i class="share_a share_weixin"></i>
+                            <p>微信</p>
+                        </a>
+                        <a href="">
+                            <i class="share_a share_qq"></i>
+                            <p>QQ</p>
+                        </a>
+                        <a href="" >
+                            <i class="share_a share_sina"></i>
+                            <p>新浪</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            if ($.cookie('LoginCookie_Cube') != null && $.cookie('LoginCookie_Cube') != "null" && $.cookie('LoginCookie_Cube') != "") {
+                var info = $.parseJSON($.cookie('LoginCookie_Cube'));
+                $.post("/Common.ashx", { PageName: "PortalManage/AdminManager.ashx", func: "QueryUserisRoot", LoginName: info.LoginName }, function (result) {
+                    if (result != null) {
+                        var json = JSON.parse(result);
+                        if (json.result.errMsg == "success") {
+                            var items = json.result.retData;
+                            if (items != null && items.length>0) {
+                                $("#footerAdmin").append("<p><a target=\"_blank\" onclick=\"javascript: ResponstUrl();\">管理员后台登录</a></p>");
+                            }
+                        }
+                    }
+                    
+                });
+
+            }
+        })
+        function ResponstUrl() {
+            window.parent.window.location.href = "/Portal/Admin/Index.aspx";
+        }
+        function SendUrl(url)
+        {
+            window.parent.window.location.href = url;
+        }
+
+    </script>
+</body>
+</html>

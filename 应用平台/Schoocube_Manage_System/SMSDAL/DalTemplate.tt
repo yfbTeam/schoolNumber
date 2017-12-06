@@ -1,0 +1,116 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+
+<#@ assembly name="System.Data" #>
+<#@ assembly name="System.xml" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Configuration" #>
+<#	// 生成配置
+	// 是否生成所有表
+	bool builderAll = true;
+	// 是否使用表名配置
+	bool useTableNamesDictionary = false;
+#>
+<#	// 连接字符串,表结构查询语句
+//string musicStoreConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connStr"].ConnectionString;
+	//string musicStoreConnectionString =@"Data Source=192.168.1.222,1400;Initial Catalog=Schoo_Cube;User ID=sa;password=flyt@sa2015";
+	//string musicStoreConnectionString =@"data source=.;Initial Catalog=TestAction;Trusted_Connection=True;";//User ID=administrator;Password=yfb@123;"; 
+		string musicStoreConnectionString = @"data source=YFBQA;Initial Catalog=StudentAssociation;User ID=sa;Password=yfb@123;";
+	string getAllTableSchemaSqlTemplate = @"SELECT sysobjects.Name as TableName, syscolumns.Name as ColumnName, SysTypes.Name as ColumnType, syscolumns.Length as ColumnLength, isnull(sys.extended_properties.Value,'') as Remark,case when syscolumns.name in (select primarykey=a.name FROM syscolumns a inner join sysobjects b on a.id=b.id  and b.xtype='U' and b.name<>'dtproperties' where  exists(SELECT 1 FROM sysobjects where xtype='PK' and name in (SELECT name FROM sysindexes WHERE indid in(SELECT indid FROM sysindexkeys WHERE id = a.id AND colid=a.colid))) and b.name=sysobjects.Name) then 1 else 0 end as IsKey FROM sysobjects,SysTypes,syscolumns LEFT JOIN sys.extended_properties ON (Syscolumns.Id = sys.extended_properties.major_id AND Syscolumns.Colid = sys.extended_properties.minor_id) WHERE (sysobjects.Xtype ='u' OR Sysobjects.Xtype ='v') AND sysobjects.name='{0}' AND Sysobjects.Id = Syscolumns.Id AND SysTypes.XType = Syscolumns.XType AND SysTypes.Name <> 'sysname' AND Sysobjects.Name Like '%' AND (sys.extended_properties.name='MS_Description' or sys.extended_properties.name is null) ORDER By SysObjects.Name, SysColumns.colid ";
+#>
+<#	// 设置要生成的当前数据库中所有的表名	
+	Dictionary<string,string> tableNames=new Dictionary<string,string>();
+	//tableNames.Add("TestTable","TestTable"); 
+	//tableNames.Add("View_orderCount","View_orderCount");
+	//tableNames.Add("View_LoanDate","View_LoanDate");
+	//tableNames.Add("View_InvenRoomEquip","View_InvenRoomEquip");
+	//tableNames.Add("View_LoanANDEscheat","View_LoanANDEscheat");
+	
+#>
+<#	// 获取当前数据库中所有的表名	
+	if (builderAll == true )
+	{  		
+		using (SqlConnection sqlConnection = new SqlConnection(musicStoreConnectionString))
+		{
+			// 获取所有用户表的查询语句
+			string getAllTableNameSql = "SELECT name FROM sysobjects where xtype='U'";
+			SqlCommand sqlCommand = new SqlCommand(getAllTableNameSql, sqlConnection);
+			sqlConnection.Open();
+			SqlDataReader reader = sqlCommand.ExecuteReader();
+
+			while (reader.Read())
+			{
+				string theTableName = (reader["name"] as string);
+				if(useTableNamesDictionary == true)
+				{
+					if(tableNames.ContainsKey(theTableName)){
+						continue;
+					}
+				}
+				tableNames.Add(theTableName,theTableName.TrimEnd('s'));
+			}
+		} 
+	}
+#>
+using SMSIDAL;
+using SMSModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SMSDAL
+{
+<#	// 循环生成实体类
+		int i=0;
+		foreach (string tableName in tableNames.Keys)
+		{
+#>
+<#
+			// 表注释
+			string tableRemark = string.Empty;
+			using (SqlConnection sqlConnection = new SqlConnection(musicStoreConnectionString))
+			{
+				// 获取所有用户表的查询语句
+				string getTableRemarkSql = string.Format("SELECT value FROM fn_listextendedproperty (NULL, 'schema', 'dbo', 'table', default, NULL, NULL) where name=N'MS_Description' and objname=N'{0}' ", tableName);
+				SqlCommand sqlCommand = new SqlCommand(getTableRemarkSql, sqlConnection);
+				sqlConnection.Open();
+				SqlDataReader reader = sqlCommand.ExecuteReader();
+				
+				if (reader.Read())
+				{
+					i++;
+					tableRemark = reader["value"] as string;
+					tableRemark += "数据处理类"+i;
+				}
+			} 
+#>
+
+
+
+	/// </summary>
+	///	<#=tableRemark #>
+	/// </summary>
+		 public class <#=(tableNames[tableName]).Replace("SBTQ_","")+"Dal" #>:<#="BaseDal<"+(tableNames[tableName]).Replace("SBTQ_","") +">"#>,<#='I'+(tableNames[tableName]).Replace("SBTQ_","")+"Dal"#>
+    {
+
+
+    }	
+
+      public partial class DalFactory
+    {
+        public static <#="I"+(tableNames[tableName]).Replace("SBTQ_","")+"Dal" #> <#="Get"+(tableNames[tableName]).Replace("SBTQ_","")+"Dal" #>()
+        {
+            return new <#=(tableNames[tableName]).Replace("SBTQ_","")+"Dal" #>();
+        }
+	}
+<#
+		}
+#>
+}

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EECC462F-4029-4364-989B-69620ACECE0C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SMSDAL</RootNamespace>
+    <AssemblyName>SMSDAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLCommon.cs" />
+    <Compile Include="Exam_ExaminationDal.cs" />
+    <Compile Include="Exam_ExamPaperObjQDal.cs" />
+    <Compile Include="Exam_ExamPaperSubQDal.cs" />
+    <Compile Include="partial\AccountInfoDal.cs" />
+    <Compile Include="partial\AdminManagerDal.cs" />
+    <Compile Include="partial\AdvertisingDal.cs" />
+    <Compile Include="partial\AssoActivityDal.cs" />
+    <Compile Include="partial\AssetManagementDal.cs" />
+    <Compile Include="partial\CardPriceHistoryDal.cs" />
+    <Compile Include="partial\CertificateListDal.cs" />
+    <Compile Include="partial\CertificateManageDal.cs" />
+    <Compile Include="partial\ClickDetailDal.cs" />
+    <Compile Include="partial\CourseDal.cs" />
+    <Compile Include="partial\EnterpriseDal.cs" />
+    <Compile Include="partial\EnterpriseJobDal.cs" />
+    <Compile Include="partial\LibraryMenuDal.cs" />
+    <Compile Include="partial\MonitorRecordDal.cs" />
+    <Compile Include="partial\PaidCardManagementDal.cs" />
+    <Compile Include="partial\PersonDocumentDal.cs" />
+    <Compile Include="partial\PrepaidCardManagementDal.cs" />
+    <Compile Include="partial\StudentTrainDal.cs" />
+    <Compile Include="partial\Course_ChapterDal.cs" />
+    <Compile Include="partial\Course_EvalueDal.cs" />
+    <Compile Include="partial\Course_WorkCorrectRelDal.cs" />
+    <Compile Include="partial\Course_WorkDal.cs" />
+    <Compile Include="partial\Couse_ResourceDal.cs" />
+    <Compile Include="partial\Couse_SelsettingDal.cs" />
+    <Compile Include="partial\Couse_SelstuinfoDal.cs" />
+    <Compile Include="DALTemplate_Cube.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DALTemplate_Cube.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Exam_ExamPaperDal.cs" />
+    <Compile Include="Exam_ExamTypeDal.cs" />
+    <Compile Include="Exam_ObjQuestionDal.cs" />
+    <Compile Include="partial\Exam_ExamAnswerDal.cs" />
+    <Compile Include="partial\Exam_SubQuestionDal.cs" />
+    <Compile Include="HZ_BaseDal.cs" />
+    <Compile Include="partial\Couse_TaskInfoDal.cs" />
+    <Compile Include="partial\MyResourceDal.cs" />
+    <Compile Include="partial\NoticesDal.cs" />
+    <Compile Include="partial\Notice_CourseDal.cs" />
+    <Compile Include="partial\Notice_CourseSeeRelDal.cs" />
+    <Compile Include="partial\ResourceReservationClaDal.cs" />
+    <Compile Include="partial\ResourceReservationDal.cs" />
+    <Compile Include="partial\ResourceReservationInfoDal.cs" />
+    <Compile Include="partial\ResourceTimeMappingIdDal.cs" />
+    <Compile Include="partial\SomeTableClickDal.cs" />
+    <Compile Include="partial\SysMessageDal.cs" />
+    <Compile Include="partial\TimeIntervalDal.cs" />
+    <Compile Include="partial\TimeManagementDal.cs" />
+    <Compile Include="partial\TopicDal.cs" />
+    <Compile Include="partial\Topic_CommentDal.cs" />
+    <Compile Include="partial\Topic_GoodClickDal.cs" />
+    <Compile Include="partial\TrainingFilesDal.cs" />
+    <Compile Include="partial\UserCardInfoDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="partial\ResourcesInfoDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SMSIDAL\SMSIDAL.csproj">
+      <Project>{4f963e30-d260-40b3-8c2f-12c432b9fb48}</Project>
+      <Name>SMSIDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSModel\SMSModel.csproj">
+      <Project>{700a8b95-11a3-4329-87af-fd06bf33673c}</Project>
+      <Name>SMSModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMSUtility\SMSUtility.csproj">
+      <Project>{01244982-0f85-4839-ae77-62f28484ffa1}</Project>
+      <Name>SMSUtility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DALTemplate_Cube.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DALTemplate_Cube.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

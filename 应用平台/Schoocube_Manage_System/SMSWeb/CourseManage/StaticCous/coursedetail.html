@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>我的课程</title>
+		<!--图标样式-->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/repository.css"/>
+		<link rel="stylesheet" type="text/css" href="css/onlinetest.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<!--[if IE]>
+			<script src="/js/html5.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="js/menu_top.js"></script>
+	</head>
+	
+	<body>
+		<!--header-->
+		<header class="repository_header_wrap manage_header">
+            $header$
+		</header>
+		<div class="onlinetest_item width pt90">
+			<div class="myexam bordshadrad">
+				<div class="stytem_select clearfix">
+					<div class="stytem_select_left fl">
+						<a href="javascript:;" class="on">我的课程</a>
+						<!--<a href="javascript:;">历史课程</a>-->
+					</div>
+				</div>
+				<!--面包屑-->
+				<div class="crumbs">
+					<a href="mycourse.html">我的课程</a>
+					<span>></span>
+					<a href="javascript:;">让英语变成母语</a>
+				</div>
+				<div class="mycourse">
+					<ul class="mycourse_lists">
+                        $Department$
+					</ul>
+				</div>
+				<div class="coursedetail_nav">
+					<a href="javascript:;" class="on">目录</a>
+					<a href="javascript:;">资源</a>
+					<a href="javascript:;">讨论</a>
+					<a href="javascript:;">笔记</a>
+					<a href="javascript:;">作业</a>
+				</div>
+				<div class="shadow">
+				
+				</div>
+			</div>
+		</div>
+		<div class="width coursedetail_wrap mb10 bordshadrad">
+			<div class="coursedetail clearfix pr">
+				<div class="shadow_left">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="shadow_right">
+					<span></span>
+					<span></span>
+				</div>
+				<div class="coursedetail_items fl">
+					<div class="detail_items_title">
+						课程目录
+					</div>
+					<ul class="item_sides" id="menu_side">
+						$menu_side$
+					</ul>
+				</div>
+				<div class="coursedetail_right fr">
+					$coursedetail$
+				</div>
+			</div>
+            <div class="coursedetail clearfix pr none">
+               $taolun$
+            </div>
+            <div class="coursedetail clearfix pr none">
+               $biji$
+            </div>
+            <div class="coursedetail clearfix pr none">
+                $renwu$
+            </div>
+            <div class="coursedetail clearfix pr none">
+                $zuoye$
+            </div>
+            <div class="coursedetail clearfix pr none">
+                $pingjia$
+            </div>
+		</div>
+		
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/system.js"></script>
+		<script>
+			//鼠标划过图片放大
+			//hoverEnlarge($('.mycourse_lists li img'));
+			$('.homework_lists li').find('.closeshow').click(function(){
+				var thisparent = $(this).parents('.homework_mes');
+				thisparent.next().stop().slideToggle().end().parent().siblings().find('.homework_none').slideUp().end().find(".closeshow").text("+");
+				var t = $(this).text();
+				$(this).text((t == "+" ? "-" : "+"));
+			})
+			//折叠菜单
+			$('#menu_side').find('li:has(ul)').children('div').click(function(){
+				$(this).parent('li').addClass('active').siblings().removeClass('active');
+				var $next = $(this).next('ul');
+				$next.slideDown();
+				if($(this).parent('li').siblings('li').children('ul').is(':visible')){
+					$(this).parent("li").siblings("li").find("ul").slideUp();
+				}
+			})
+			//微课 资源 tab切换
+			$('.course_detail>div').click(function(){
+				$(this).addClass('on').siblings().removeClass();
+				var n = $(this).index();
+				$('.course_detail_listswrap>div').eq(n).show().siblings().hide();
+			})
+			//折叠菜单选中样式
+			$('#menu_side li ul li ul li').click(function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+			function knotContentHover(obj){
+				obj.hover(function(){
+					$(this).children('div').show();
+				},function(){
+					$(this).children('div').hide();
+				});
+			}
+			knotContentHover($('.item_knot'));
+			knotContentHover($('.item_content'));
+			//
+			$('.repository_lists>li').hover(function(){
+				$(this).find('.repository_download').show();
+			},function(){
+				$(this).find('.repository_download').hide();
+			})
+			$('.discuss_lists>li').hover(function(){
+				$(this).find('h1').show();
+			},function(){
+				$(this).find('h1').hide();
+			})
+			$('.course_detail_lists li').hover(function(){
+				$(this).find('.course_detail_bg').fadeIn();
+			},function(){
+				$(this).find('.course_detail_bg').fadeOut();
+			})
+			//评论显示
+			$('.comment').click(function(){
+				$(this).parents('li').find('.comment_wrap').toggle();
+			})
+			//讨论 笔记目录切换
+			$('.coursedetail_nav a').click(function(){
+				$(this).addClass('on').siblings().removeClass('on');
+				var n = $(this).index();
+				$('.coursedetail_wrap>div').eq(n).show().siblings().hide();
+			})
+		</script>
+	</body>
+</html>

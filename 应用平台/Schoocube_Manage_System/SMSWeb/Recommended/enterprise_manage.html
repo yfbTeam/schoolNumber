@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--图标样式-->
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/repository.css" />
+    <link rel="stylesheet" href="/css/plan.css" />
+    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+    <!--[if IE]>
+            <script src="/js/html5.js"></script>
+        <![endif]-->
+    <script type="text/javascript" src="/js/menu_top.js"></script>
+    <script type="text/javascript" src="/js/menu_top.js"></script>
+    <script src="/Scripts/My97DatePicker/WdatePicker.js"></script>
+    <script src="/Scripts/layer/layer.js"></script>
+    <script src="/Scripts/jquery.tmpl.js"></script>
+    <script src="/Scripts/Common.js"></script>
+    <script src="/Scripts/PageBar.js"></script>
+    <style>
+        .Postadd {
+            display: block;
+            float: right;
+            background: #96cc66;
+            height: 30px;
+            width: 20px;
+        }
+
+            .Postadd i {
+                color: #fff;
+            }
+
+        .more_info {
+            display: none;
+            left: -56px;
+            position: absolute;
+            top: 20px;
+            z-index: 200;
+        }
+
+            .more_info ul.info {
+                width: 300px;
+                background: #fff;
+                border-collapse: collapse;
+            }
+
+                .more_info ul.info li {
+                    border: 1px solid #abd0f5;
+                    background: #fff;
+                    height: 28px;
+                    line-height: 28px;
+                    width: 98px;
+                    float: left;
+                    font-size: 14px;
+                }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header class="repository_header_wrap manage_header">
+        <div class="width repository_header clearfix">
+            <a href="index.html" class="logo fl"><img src="/images/logo.png" /></a>
+           
+            <nav class="navbar menu_mid fl">
+                <ul>
+                    <li class="active"><a href="/PersonalSpace/Learning_center_portal.aspx">学习中心门户</a></li>
+                    <li><a href="/OnlineLearning/MyLessons.aspx">在线学习</a></li>
+                    <li><a href="/CourseManage/Cource_OnlineChose.aspx">在线选课</a></li>
+                    <li><a href="/Exam/MyExam.aspx">在线考试</a></li>
+                    <li class="active"><a href="#">推荐就业</a></li>
+                </ul>
+            </nav>
+            <div class="search_account fr clearfix">
+                <ul class="account_area fl">
+                    <li>
+                        <a href="" class="dropdown-toggle">
+                            <i class="icon icon-envelope"></i>
+                            <span class="badge">3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="login_area clearfix">
+                            <div class="avatar">
+                                <img src="<%=PhotoURL %>" />
+                            </div>
+                            <h2>
+                                <%=Name %>
+                            </h2>
+                        </a>
+                    </li>
+                </ul>
+                <div class="settings fl pr">
+                    <a href="">
+                        <i class="icon icon-cog"></i>
+                    </a>
+                    <div class="setting_none">
+                        <a href="/PersonalSpace/PersonalSpace_Teacher.aspx"><span>个人中心</span></a>
+                        <span onclick="logOut()">退出</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--time-->
+    <div class="time_wrap pt90 width clearfix">
+        <!---->
+        <div class=" bordshadrad" style="background:#FFF;padding:20px;">
+            <div class="stytem_select clearfix">
+                <div class="stytem_select_left fl">
+                    <a href="javascript:;" class="on">默认排序</a>
+                    <a href="javascript:;">相关度</a>
+                </div>
+            </div>
+            <div class="stytem_select">
+                <div class="stytem_select_right fl">
+                    <select name="" class="select" style="margin-top: 0px;">
+                        <option value="">全部状态</option>
+                    </select>
+                    <div class="search_exam fl pr ml10">
+                        <input type="text" name="" id="" value="" placeholder="请输入关键字">
+                        <i class="icon  icon-search"></i>
+                    </div>
+                    <div class="fr">
+                        <a href="javascript:;" class="add_res" onclick="OpenIFrameWindow('新增资源', 'new_respority.html', '700px', '400px');">
+                            <i class="icon icon-plus" style="color:#fff"></i>新增资源
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="time_base">
+                <table class="table_wrap mt10">
+                    <thead class="thead">
+                    <th>企业名称</th>
+                    <th>企业账号</th>
+                    <th>负责人</th>
+                    <th>联系方式</th>
+                    <th>岗位</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td>58同城科技有限公司</td>
+                            <td>58compny</td>
+                            <td>徐景瑞</td>
+                            <td>18254157367</td>
+                            <td class="pr Post">
+                                <span class="Postname">
+                                    H5前端工程师
+                                    <span class="Post_post">
+                                        <i class="Drop_down">...(3)</i>
+                                        <div class="more_info" style="display: none;">
+                                            <ul class="info">
+                                                <li>H5前端工程师</li>
+                                                <li>软件架构师</li>
+                                                <li>分布式开发</li>
+                                            </ul>
+                                        </div>
+                                    </span>
+                                    <span class="Postadd">
+                                        <a href="javascript:;" class="add" onclick="job('43')"><i class="Plus">+</i></a>
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="enable_wrap">
+                                    <a href="javascript:;">启用</a>
+                                    <a href="javascript:;" class="disable">禁用</a>
+                                </span>
+                            </td>
+                            <td>
+                                <i class="icon icon-edit"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>58同城科技有限公司</td>
+                            <td>58compny</td>
+                            <td>徐景瑞</td>
+                            <td>18254157367</td>
+                            <td class="pr Post">
+                                <span class="Postname">
+                                    H5前端工程师
+                                    <span class="Post_post">
+                                        <i class="Drop_down">...(3)</i>
+                                        <div class="more_info" style="display: none;">
+                                            <ul class="info">
+                                                <li>H5前端工程师</li>
+                                                <li>软件架构师</li>
+                                                <li>分布式开发</li>
+                                            </ul>
+                                        </div>
+                                    </span>
+                                    <span class="Postadd">
+                                        <a href="javascript:;" class="add" onclick="job('43')"><i class="Plus">+</i></a>
+                                    </span>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="enable_wrap">
+                                    <a href="javascript:;">启用</a>
+                                    <a href="javascript:;" class="disable">禁用</a>
+                                </span>
+                            </td>
+                            <td>
+                                <i class="icon icon-edit"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common.js"></script>
+    <script>
+        $(function () {
+            $('.tbody tr td.Post').find('.Postname').hover(function () {
+                $(this).find('.more_info').show();
+            }, function () {
+                $(this).find('.more_info').hide();
+            })
+        })
+    </script>
+</body>
+</html>

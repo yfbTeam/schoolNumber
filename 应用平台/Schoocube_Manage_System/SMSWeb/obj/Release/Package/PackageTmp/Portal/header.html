@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../PortalCss/reset.css" rel="stylesheet" />
+    <style>
+        .width {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        #header .top {
+            width: 100%;
+            height: 34px;
+            background: #333333;
+        }
+
+            #header .top .top_con {
+                height: 34px;
+                font-size: 12px;
+                line-height: 34px;
+                color: #fff;
+            }
+
+                #header .top .top_con h1 .tel {
+                    width: 22px;
+                    height: 22px;
+                    display: block;
+                    float: left;
+                    background: url(../PortalImages/sprite.png) no-repeat 0 0;
+                    margin: 6px 5px 6px 0px;
+                }
+
+        .weixin span {
+            width: 22px;
+            height: 22px;
+            display: block;
+            background: url(../PortalImages/sprite.png) no-repeat 0px -26px;
+            margin: 6px 5px 6px 0px;
+            float: left;
+        }
+
+        .login_resig {
+            margin-left: 20px;
+        }
+
+            .login_resig a {
+                padding: 0px 5px;
+                color: #fff;
+            }
+        /*logo*/
+        .logo_search {
+            padding: 25px 0px;
+        }
+
+        .search {
+            height: 32px;
+            width: 300px;
+            border-radius: 2px;
+            border: 2px solid #2562ba;
+            margin: 10px 0px;
+        }
+
+            .search input[type=text] {
+                text-indent: 2em;
+                width: 240px;
+                height: 30px;
+                border: none;
+                outline: none;
+            }
+
+            .search input[type=submit] {
+                width: 57px;
+                height: 32px;
+                border: none;
+                background: #2562ba;
+                color: #fff;
+                font-size: 12px;
+            }
+        /*nav*/
+        /*nav*/
+        .nav {
+            width: 100%;
+            background: #2562ba;
+            height: 40px;
+            text-align: center;
+            margin: auto;
+            position: relative;
+        }
+
+        .nav_a ul.nav_b li {
+            background: url("../PortalImages/nav_rightbg.png") no-repeat right center;
+            float: left;
+            font-family: "微软雅黑";
+            font-size: 16px;
+            line-height: 40px;
+            position: relative;
+            text-align: center;
+            width: 100px;
+        }
+            /*.nav_a ul.nav_b li:hover { background:#0296f4;}*/
+            .nav_a ul.nav_b li .xiala dt.hover {
+                background: url(../PortalImages/hover_nav.png) no-repeat;
+                background-size: 100%;
+            }
+
+            .nav_a ul.nav_b li .xiala dt {
+                height: 40px;
+            }
+
+            .nav_a ul.nav_b li a {
+                color: #fff;
+                display: block;
+            }
+
+        .lie {
+            display: none;
+            left: 0;
+            position: absolute;
+            top: 40px;
+            z-index: 200;
+        }
+
+            .lie ul.liea li {
+                background: #0077DB;
+                height: 28px;
+                line-height: 28px;
+                width: 100px;
+            }
+
+                .lie ul.liea li:hover {
+                    background: #0296f4;
+                }
+
+                .lie ul.liea li a {
+                    color: #fff;
+                    display: block;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+
+                    .lie ul.liea li a:hover {
+                        text-decoration: underline;
+                    }
+        /*banner*/
+        .banner_bg {
+            width: 100%;
+            height: 300px;
+            box-shadow: 0px 3px 30px 0px rgba(0,0,0,.2);
+        }
+
+        .slider {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .slider ul li a {
+                display: block;
+                width: 100%;
+                height: 300px;
+            }
+            /*数字按钮样式*/
+            .slider .num {
+                width: 100%;
+                height: 14px;
+                bottom: 15px;
+                position: absolute;
+                text-align: center;
+                z-index: 1;
+            }
+
+                .slider .num ul {
+                    display: inline-block;
+                    height: 14px;
+                    vertical-align: top;
+                }
+
+                .slider .num li {
+                    display: inline-block;
+                    width: 12px;
+                    text-indent: -9999px;
+                    height: 12px;
+                    border: 1px solid #ef8222;
+                    float: left;
+                    border-radius: 100%;
+                    background: #fff;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+
+                    .slider .num li.on {
+                        background: #ef8222;
+                    }
+    </style>
+    <script src="../Scripts/jquery-1.11.2.min.js"></script>
+    <script src="../PortalJs/jquery.superslide.2.1.1.js"></script>
+    <script src="../PortalJs/layout.js"></script>
+    <script src="../Scripts/Common.js"></script>
+    <script src="/Scripts/layer/layer.js"></script>
+    <script src="../Scripts/jquery.tmpl.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(window).resize(function () {
+                $('.slider .51buypic').width($(window).width());
+                $('.slider .51buypic li').width($(window).width());
+            });
+           
+        })
+    </script>
+    <script type="text/x-jquery-tmpl" id="bannerImg">
+        <li style="background: url(${ImageUrl}) no-repeat center top; height: 300px;">
+        </li>
+    </script>
+</head>
+<body>
+    <div id="header">
+       
+        <!--logo-->
+        <div class="logo_search width clearfix">
+            <div class="logo fl">
+                <img src="../PortalImages/logo.png" alt="" />
+            </div>
+            <!--<div class="search fr">
+                <input type="text" placeholder="请输入关键词" />
+                <input type="submit" value="搜索" />
+            </div>-->
+        </div>
+        <!--nav-->
+        <div class="nav">
+            <div class="nav_a width">
+                <ul class="nav_b" id="menuList"></ul>
+            </div>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="banner_bg">
+        <div class="banner">
+            <div class="slider">
+                <ul class="51buypic" id="bannerUL"></ul>
+                <div class="num">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            initMenu();
+            initBanner();
+            $(".resig").on('click', function () {
+               
+            });
+
+            $(".login").on('click', function () {
+                window.parent.window.location.href = "/Login_hz.aspx";
+
+            });
+            $("#query").on('click', function () {
+                indow.parent.window.location.href = "/Portal/Certificate/Query.aspx";
+            })
+        })
+
+        function initMenu(){
+            $.ajax({
+                type: "Post",
+                url: "/Common.ashx",
+                async: false,
+                dataType: "json",
+                data: {
+                    "PageName": "PortalManage/AdminManager.ashx",
+                    "func": "GetBeforeMenu",
+                    "IsDelete": 0,
+                    "Display": 0,
+                    "BeforeAfter": 0
+                },
+                success: function (json) {
+                    if (json.result.errMsg == "success") {
+                        $("#menuList").html("");
+                        $("#menuList").html(json.result.retData);
+
+                        $('.xiala').hover(function () {
+                            $(this).find('dt').addClass('hover');
+                            $(this).find(".lie").show();
+                        }, function () {
+                            $(this).find('dt').removeClass('hover');
+                            $(this).find(".lie").hide();
+                        })
+
+                    }
+                },
+                error: OnError
+            });
+        }
+
+        function initBanner() {
+            $.ajax({
+                url: "/Common.ashx",
+                type: "post",
+                async: false,
+                dataType: "json",
+                data: {
+                    PageName: "PortalManage/SchoolStyle.ashx",
+                    Func: "GetPageList",
+                    MenuId: 41,
+                    PageIndex: 1,
+                    pageSize: 8
+                },
+                success: function (json) {
+                    if (json.result.errMsg == "success") {
+                        $("#bannerUL").html('');
+                        $("#bannerImg").tmpl(json.result.retData.PagedData).appendTo("#bannerUL");
+                    }
+                    else {
+                        $("#bannerUL").html("<li>暂无数据！</li>");
+                    }
+                    $(".slider").slide({ titCell: ".num ul", mainCell: ".51buypic", effect: "fold", autoPlay: true, delayTime: 700, autoPage: true });
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+                }
+            });
+        }
+
+        function redirect() {
+            window.parent.window.location.href = "/Portal/index.aspx";
+        }
+
+        function ResponstUrl(url) {
+            window.parent.window.location.href = url;
+        }
+    </script>
+</body>
+</html>
